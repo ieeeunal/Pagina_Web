@@ -1,0 +1,30 @@
+[
+{
+	"name": "Camilo Campo",
+	"role": "Presidente",
+	"id": "camilo"
+},
+{
+	"name": "Valentina Hernandez",
+	"role": "Vicepresidenta",
+	"id": "valentina"
+},
+{
+	"name": "Diego Aguilar",
+	"role": "Tesorero",
+	"id": "diego"
+},
+{
+	"name": "Iván Alexis",
+	"role": "Secretario General",
+	"id": "ivan"
+},
+
+{
+	"name": "Mauricio Rodriguez",
+	"role": "Webmaster",
+	"id": "mauricio"
+}
+
+
+]
