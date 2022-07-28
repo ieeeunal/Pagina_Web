@@ -3,15 +3,14 @@ import { React, useState, useEffect } from 'react';
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { AiFillFacebook, AiFillInstagram } from "react-icons/ai";
 
+import { Link } from "react-router-dom"
+
 import '../Styles/Chapter.sass'; 
- 
-// logos 
-// import facebook from '../Assets/facebook.svg';
-// import instagram from '../Assets/instagram.svg';
 
 import { getChapterList } from './utils/chaptersDB'; 
 import Queue from './utils/Queue'; 
 import initial from '../Assets/chapters/AESS.png'; 
+import routes from '../Helpers/routes';
 
 export const  Chapter = ({ changeColor }) => {
 
@@ -26,6 +25,15 @@ export const  Chapter = ({ changeColor }) => {
 	const [currentChapter, setCurrentChapter]  = useState(queue.current());  
 	const [image, setImage] = useState(initial); 
 	const [inactiveImage, setInactiveImage] = useState(false); 
+
+	// 
+	const [colorTest, setColorTest ] = useState('');
+	console.log(colorTest)
+
+	// const changeColorTest = (id) => {
+	// 	setColorTest(id);
+	// }
+	// 
 
 
 	useEffect(() => {
@@ -69,6 +77,10 @@ export const  Chapter = ({ changeColor }) => {
 		changeColor(queue.current().colorId); 
 	}
 
+	// const captureData = () => {
+	// 	const 
+	// }
+
 	return (
 		<>			
 			<div className = "d-flex"> 
@@ -88,7 +100,8 @@ export const  Chapter = ({ changeColor }) => {
 						<h1>  {currentChapter.name} </h1>
 						<h2>  {currentChapter.nameLong} </h2>
 						<p> {currentChapter.info} </p> 
-                        <a className = {`buttonMoreInfo ${currentChapter.colorId}-bg-color `} rel="noopener noreferrer" href="https://google.com"> Ver más </a>
+                        {/* <a className = {`buttonMoreInfo ${currentChapter.colorId}-bg-color `} rel="noopener noreferrer" href={`${routes.chapter}/${currentChapter.name}`}> Ver más </a> */}
+						<Link className = {`buttonMoreInfo ${currentChapter.colorId}-bg-color `} rel="noopener noreferrer" to={`${routes.chapter}/${currentChapter.name}`} state={{ colorTest: currentChapter.colorId }}> Ver más </Link>
 					</div>
 					<div className = "chapter-info__controls">
 						<button onClick = { prev }> <IoIosArrowBack /> Anterior </button>
