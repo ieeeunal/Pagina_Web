@@ -18,30 +18,29 @@ import { CardsList } from '../Components/CardsList';
 import team from '../Assets/team.png';
 import Hero from '../Components/Hero';
 import Form from '../Components/Form';
+import routes from '../Helpers/routes';
 
 export default function LandingPage () {
 	const [color, setColor ] = useState('aess');
+	console.log(color)
 
 	const changeColor = (id) => {
-		// console.log(id)
+		console.log(id)
 		setColor(id);
 	}
-
-
-	// const handleClick = () => {
-	// 	document.getElementById(scrollToId).scrollIntoView({ behavior: 'smooth' });
-	// };
-
+  
+  	// const parentToChild = () => {
+    // 	setColor(color);
+  	// }
 	
 	return (
 		<>
 			<NavBar />
 			<Media />
-			<Hero >
+			<Hero backImage={Owl} chapterName="aess" color2="aess-color-b" secondColor="Active">
 				<h2 className="title mr-5"> Ingenia tu camino </h2>
-                <a className="ml-4 ver-mas slide-bottom">Ver mas</a>
+                <a className="ml-4 ver-mas slide-bottom" href={routes.chapter}>Ver mas</a>
 			</Hero>
-			<section className="section-2"> </section>
 
 			{/* <section className="section-3 mt-5  pt-5 full-width d-flex flex-column justify-content-center"> */}
 			<section className="section-3 full-width d-flex flex-column justify-content-center" id="quienes-somos">
