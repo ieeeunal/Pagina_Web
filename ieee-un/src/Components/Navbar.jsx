@@ -1,14 +1,15 @@
 import { React } from 'react'
 import '../Styles/NavBar.sass'
 import logo from '../Assets/logo.svg';
-import Login from '../Pages/Login';
+import routes from '../Helpers/routes'
+import { Link } from 'react-router-dom';
 
 export default function NavBar () {
 
     const navLinks = [
-		{ navLinkName: 'Quienes Somos', scrollToId: '#quienes-somos' },
-		{ navLinkName: 'Capítulos', scrollToId: '#capitulos' },
-		{ navLinkName: 'Equipo', scrollToId: '#equipo' }
+		{ navLinkName: 'Quienes Somos', scrollToId: routes.seccionQuienesSomos },
+		{ navLinkName: 'Capítulos', scrollToId: routes.seccionCapitulos },
+		{ navLinkName: 'Equipo', scrollToId: routes.seccionEquipo }
 	];
     
     // const navLinks = [
@@ -38,7 +39,7 @@ export default function NavBar () {
                             })
                         }
                         <li className="section__navbar-item">
-                            <a rel="noopener noreferrer" href="/sign-in"> Login </a>
+                            <Link rel="noopener noreferrer" to={routes.login}> Login </Link>
                             <span></span>
                         </li>
                     </ul>
