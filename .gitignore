@@ -2,6 +2,7 @@
 
 # dependencies
 /ieee-un/node_modules
+/ieee-un/build
 /backend/node_modules
 /.pnp
 .pnp.js
