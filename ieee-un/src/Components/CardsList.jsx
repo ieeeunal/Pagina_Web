@@ -24,7 +24,7 @@ export const CardsList = () => {
 					}
 				}
 			}
-		return (<MemberCard name = {e.name} role = {e.role} img = {photo} />)
+		return (<MemberCard name = {e.name} role = {e.role} img = {photo}  linkLinkedin={e.linkLinkedin} linkVarios={e.linkVarios} />)
 		})
 		return members; 
 	}
