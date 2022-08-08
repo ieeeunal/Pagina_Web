@@ -11,14 +11,34 @@ import { getChapterList } from './utils/chaptersDB';
 import Queue from './utils/Queue'; 
 import initial from '../Assets/chapters/AESS.png'; 
 import routes from '../Helpers/routes';
+import Axios  from 'axios';
 
 export const  Chapter = ({ changeColor }) => {
 
 	const chaptersList = getChapterList();  // Objetc Chapter
-
 	const [queue, _] = useState(new Queue(chaptersList)); 
-
 	const [N, setN_] = useState(chaptersList.length); 
+
+	
+	
+	// const [dataChapterDB, setDataChapterDB] = useState([])
+	// const [queue, setQueue] = useState();     
+	// useEffect(() => {
+    //     // *********** CALL TO DB *********** //
+	// 	const getDataChapters = () =>{
+	// 		Axios.get("/chapter/list").then((result) => {
+	// 			setDataChapterDB(result.data);
+	// 		});
+	// 	};
+	// 	getDataChapters();
+    // },[]);
+
+	// setQueue(new Queue(dataChapterDB))
+	// console.log(dataChapterDB)
+	// const [N, setN_] = useState(dataChapterDB.length); 
+
+	
+
 	const [n, setN] = useState(0); 
 	const [img, setImg] = useState(''); 
 
@@ -34,11 +54,6 @@ export const  Chapter = ({ changeColor }) => {
 	// 	setColorTest(id);
 	// }
 	// 
-
-
-	useEffect(() => {
-		
-	}, [])
 
 	const updateImage = () => {
 		import(`../Assets/chapters/${queue.current().name}.png`).then( image => 
