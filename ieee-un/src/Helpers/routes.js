@@ -9,12 +9,19 @@ const routes= {
     notFound: "*",
 
 // Secciones 
+    seccionInicio: "#inicio",
     seccionQuienesSomos: "#quienes-somos",
     seccionCapitulos: "#capitulos",
     seccionEquipo: "#equipo",
+    seccionComentarios: "#comentarios",
 
 // Rutas Admin
-    // admin: "/Dashport",
+    admin: "/dashport",
+    adminId: "/dashport/:dashportPage",
+    adminUser: "/dashport/user",
+    adminMember: "/dashport/member",
+    AdminChapter: "/dashport/chapter",
+    AdminMessage: "/dashport/message"
     // dashportHome: "/DashportHome",
 }
 
