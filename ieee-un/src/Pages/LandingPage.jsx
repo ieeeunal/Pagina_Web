@@ -4,12 +4,15 @@ Página principal de la aplicación.
 Contiene toda la información de la rama.
 */
 
-import { React, useState} from 'react';
+import { React, useEffect, useState} from 'react';
+import AOS from 'aos';
+import "aos/dist/aos.css";
 
 import NavBar from "../Components/Navbar";
 import Media from "../Components/Media";
 
 import Owl from '../Assets/Buho.svg';
+import pdfInfo from '../Components/utils/IEEEUN.pdf';
 
 import '../Styles/LandingPage.sass';
 import { Chapter } from '../Components/Chapter';
@@ -19,6 +22,8 @@ import team from '../Assets/team.png';
 import Hero from '../Components/Hero';
 import Form from '../Components/Form';
 import routes from '../Helpers/routes';
+import Footer from '../Components/Footer';
+import { Link } from 'react-router-dom';
 
 export default function LandingPage () {
 	const [color, setColor ] = useState('aess');
@@ -28,22 +33,39 @@ export default function LandingPage () {
 		console.log(id)
 		setColor(id);
 	}
+
+	useEffect(() => {
+		AOS.init();
+		AOS.refresh();
+	}, []);
   
-  	// const parentToChild = () => {
-    // 	setColor(color);
-  	// }
+	useEffect(() => {
+		document.body.style.overflow = "visible";
+	}, []);
+
+	// window.onscroll = function() {scrollFunction()};
+
+	// function scrollFunction() {
+	// 	if (document.body.scrollTop === 0 || document.documentElement.scrollTop === 0 ) {
+	// 		document.getElementById("inicio").style.margin = "50px 0";	
+	// 	} else {
+	// 		document.getElementById("inicio").style.margin = "0";
+	// 	}
+	// }
 	
 	return (
 		<>
+			<div id="inicio"></div>
 			<NavBar />
 			<Media />
-			<Hero backImage={Owl} chapterName="aess" color2="aess-color-b" secondColor="Active">
+			<Hero backImage={Owl} chapterName="aess" color2="aess-color-b" secondColor="Active" >
 				<h2 className="title mr-5"> Ingenia tu camino </h2>
-                <a className="ml-4 ver-mas slide-bottom" href={routes.chapter}>Ver mas</a>
+				{/* <Link className="ml-4 ver-mas slide-bottom" to={routes.chapter}>Ver mas</Link> */}
+				<a className="ml-4 ver-mas slide-bottom" href={pdfInfo}>Ver mas</a>				
 			</Hero>
 
 			{/* <section className="section-3 mt-5  pt-5 full-width d-flex flex-column justify-content-center"> */}
-			<section className="section-3 full-width d-flex flex-column justify-content-center" id="quienes-somos">
+			<section className="section-3 full-width d-flex flex-column justify-content-center" id="quienes-somos" data-aos="fade-down"  data-aos-delay="500">
 				<div className="quienes-somos-container center">
 					<br />
 					<br />
@@ -63,7 +85,7 @@ export default function LandingPage () {
 					<hr />
 
 					<div className="data-container row d-flex  justify-content-center align-items-center">
-						<div className="col d-flex justify-content-center">
+						<div className="col d-flex justify-content-center" data-aos="fade-up" data-aos-delay="300">
 							<p className="a">
 								+162
 							</p>
@@ -72,7 +94,7 @@ export default function LandingPage () {
 							</p>
 						</div>
 
-						<div className="col d-flex justify-content-center">
+						<div className="col d-flex justify-content-center" data-aos="fade-up" data-aos-delay="500">
 							<p className="a">
 								12
 							</p>
@@ -82,7 +104,7 @@ export default function LandingPage () {
 						</div>
 
 
-						<div className="col d-flex justify-content-center">
+						<div className="col d-flex justify-content-center" data-aos="fade-up" data-aos-delay="700">
 							<p className="a">
 								32
 							</p>
@@ -101,8 +123,8 @@ export default function LandingPage () {
 
 			{ /* Team */ }
 			<section className = "position-relative full-width pt-5" style = {{ height: 'fit-content'}}>
-				<div className = "team-div d-flex flex-column align-items-center mt-5">
-					<img className = "team-icon" src= { team } alt=""/ >
+				<div className = "team-div d-flex flex-column align-items-center mt-5" id="equipo">
+					<img className = "team-icon" src= { team } alt="" />
 					<div className = "row mt-3 align-items-center">
 						<div className = "col"><span className = "line-title" /></div>
 						<div className = "col team-title">Nuestro Equipo</div>
@@ -111,7 +133,7 @@ export default function LandingPage () {
 				</div>
 				<div className = "w-100 position-relative" style = {{ height: 'fit-content'}}>
 					<div className = "arrow-up"> </div>
-					<div className = "card-container-team position-relative" id="equipo">
+					<div className = "card-container-team position-relative">
 						<CardsList /> 
 					</div>
 				</div>
@@ -119,10 +141,11 @@ export default function LandingPage () {
 
 			{/* Form */}
 
-			<section className = "position-relative full">
+			<section className = "position-relative" data-aos="zoom-in" id="comentarios">
 				<Form /> 
 			</section> 
 
+			<Footer />
 		</>
 	)
 }
