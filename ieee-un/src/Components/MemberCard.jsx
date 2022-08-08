@@ -1,17 +1,13 @@
 // Member card .
-import { React, useState} from 'react'; 
+import React from 'react'; 
 import { BsLinkedin } from "react-icons/bs";
 import { BiLink } from "react-icons/bi";
 
 import '../Styles/MemberCard.sass'; 
 
-export const  MemberCard = ({name, role, img, linkLinkedin, linkVarios}) => {
-	// const [name_, setName] = useState(name); 
-	// const [photo_, setPhoto] = useState(img); 
-	// const [role_, setRole] = useState(role); 
-
+export const  MemberCard = ({name, role, img, linkLinkedin, linkVarios, delay}) => {
 	return (
-			<div className = "member-card transition-short align-items-center ">
+			<div className = "member-card transition-short align-items-center" data-aos="fade-up" data-aos-delay={`${250+delay}`}>
 				<div className ="img-container position-relative">
 					<img className = "position-relative" src= { img } alt="" />
 				</div>
