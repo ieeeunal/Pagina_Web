@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/Pagina_Web/static/css/main.5d40e308.css",
-    "main.js": "/Pagina_Web/static/js/main.9c9baecf.js",
+    "main.css": "/Pagina_Web/static/css/main.99d675b1.css",
+    "main.js": "/Pagina_Web/static/js/main.64781363.js",
     "static/js/658.23a60143.chunk.js": "/Pagina_Web/static/js/658.23a60143.chunk.js",
     "static/js/134.a930cdbe.chunk.js": "/Pagina_Web/static/js/134.a930cdbe.chunk.js",
     "static/js/885.41e25969.chunk.js": "/Pagina_Web/static/js/885.41e25969.chunk.js",
     "static/js/525.8174252a.chunk.js": "/Pagina_Web/static/js/525.8174252a.chunk.js",
+    "static/js/796.461f17cf.chunk.js": "/Pagina_Web/static/js/796.461f17cf.chunk.js",
     "static/js/636.1b4c2166.chunk.js": "/Pagina_Web/static/js/636.1b4c2166.chunk.js",
     "static/js/592.29e8db4c.chunk.js": "/Pagina_Web/static/js/592.29e8db4c.chunk.js",
     "static/js/717.6c901000.chunk.js": "/Pagina_Web/static/js/717.6c901000.chunk.js",
@@ -30,6 +31,7 @@
     "static/media/alejandra.jpg": "/Pagina_Web/static/media/alejandra.ab0043e2a5ad5494321c.jpg",
     "static/media/daniel.jpg": "/Pagina_Web/static/media/daniel.23d99f8975e15ff21d13.jpg",
     "static/media/vallejo.jpg": "/Pagina_Web/static/media/vallejo.7d3b1239ed3511a02467.jpg",
+    "static/media/PES.png": "/Pagina_Web/static/media/PES.ef61f1cea5595b393ab1.png",
     "static/media/marco.jpg": "/Pagina_Web/static/media/marco.3907e6454714e820b35b.jpg",
     "static/media/mario.jpg": "/Pagina_Web/static/media/mario.83a83b1effc6191d49c5.jpg",
     "static/media/julian.jpg": "/Pagina_Web/static/media/julian.563ca864d26d722dc9bc.jpg",
@@ -42,11 +44,11 @@
     "static/media/instagram.svg": "/Pagina_Web/static/media/instagram.23c95988c7e6f9809ba405e2f522d791.svg",
     "static/media/Youtube.svg": "/Pagina_Web/static/media/Youtube.0878849f07cdb0bfafcde98851ba1f8d.svg",
     "static/media/facebook.svg": "/Pagina_Web/static/media/facebook.ebe96069a6bdebde405fbfd86379ca3d.svg",
-    "main.5d40e308.css.map": "/Pagina_Web/static/css/main.5d40e308.css.map",
-    "main.9c9baecf.js.map": "/Pagina_Web/static/js/main.9c9baecf.js.map"
+    "main.99d675b1.css.map": "/Pagina_Web/static/css/main.99d675b1.css.map",
+    "main.64781363.js.map": "/Pagina_Web/static/js/main.64781363.js.map"
   },
   "entrypoints": [
-    "static/css/main.5d40e308.css",
-    "static/js/main.9c9baecf.js"
+    "static/css/main.99d675b1.css",
+    "static/js/main.64781363.js"
   ]
 }
