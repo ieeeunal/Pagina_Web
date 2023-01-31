@@ -159,6 +159,22 @@ img.team-icon
 	font-size: 20pt
 	font-weight: 900
 
+$xs: 0,
+$sm: 576px,
+$md: 768px,
+$lg: 992px,
+$xl: 1200px,
+$xxl: 1400px
+
+@media (max-width: $md)
+	.team-title
+		text-align: center
+		font-size: 1.2em
+		white-space: normal
+
+	img.team-icon
+		width: 140px
+
 .line-title
 	display: block
 	width: 100px	
@@ -280,9 +296,9 @@ img.team-icon
 
 @media (max-width: 768px)
 	.title
-		font-size: 62pt !important
-		display: block 
-		line-height: 62pt
+		font-size: 40pt !important
+		display: block
+		line-height: 40pt
 		width: 80vw
 		text-align: center
 
@@ -301,7 +317,7 @@ img.team-icon
 		flex-direction: column
 		align-items: center
 		justify-content: center
-		margin-left: 50px
+		margin-left: 40px
 		margin-top: 35vh
 
 .game-responsive
