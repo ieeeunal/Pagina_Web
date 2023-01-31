@@ -83,43 +83,12 @@ export default function Form () {
 		})
 		// enviarMail()
 	}
-
-	// const enviarMail = () => {
-	// 	const config = {
-	// 		host: "setp.gmail.com",
-	// 		port: 587,
-	// 		auth: {
-	// 			user: mailCredentials,
-	// 			pass: passwordCredentials
-	// 		}
-	// 	}
-
-	// 	const mailOptions = {
-	// 		from: mail, 
-	// 		to: "jflancherosm@unal.edu.co", 
-	// 		subject: `correo de prueba from ${mail}`,
-	// 		text: `Hola soy ${fullName} y pertenezco al ${program} estoy interesado en el capitulo ${chapter} y el mesanje que les envio por el formulario es: ${message}`
-	// 	}
-
-	// 	const transport = nodemailer.createTransport(config);
-	// 	transport.sendMail(mailOptions)
-		
-		// const info = transport.sendMail(mailOptions, (error,info) => {
-		// 	if(error){
-		// 		console.log(error);
-		// 	}
-		// 	else{
-		// 		console.log(`Email send: ${info}`)
-		// 	}
-		// })
-	// }
-
 	
-
 	return (
 		<div className = "d-flex flex-column center px-4 px-md-0">
 			<h1 className ={`container ${styles.formTitle} my-5`}> Contáctanos </h1>
-			<form className = {`container ${styles.registerForm}`} onSubmit={sendMessage}>
+			<form className = {`container ${styles.registerForm}`} method="POST" action="https://script.google.com/macros/s/AKfycbwvc4Uz2Nn-ixdCdDLLLw1ilF6ePdk_XLJLJF9X0LrFpAmjdV6pWEdKV3wzcLnqma8-DA/exec" id="test">
+			
 				<div className = "row my-2">
 					<input className = "form-control col" type="text" id="fullName" name="fullName" placeholder = "Nombre completo" required onChange={(e) => setFullName(e.target.value)}/>
 					{fullNameError && <InlineError error={fullNameError} />}
