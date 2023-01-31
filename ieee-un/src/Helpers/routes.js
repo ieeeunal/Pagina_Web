@@ -1,15 +1,15 @@
 const routes= {
 // Paginas
-    home: "/",
+    home: "/Pagina_Web",
     login: "/sign-in",
     identidy: "/valideIdentidy",
     changePassword: "/recover",
-    chapter: "/chapter",
-    chapterId: "/chapter/:chapterId",
+    chapter: "/Pagina_Web/chapter",
+    chapterId: "/Pagina_Web/chapter/:chapterId",
     notFound: "*",
 
 // Secciones 
-    seccionInicio: "#inicio",
+  //  seccionInicio: "#inicio",
     seccionQuienesSomos: "#quienes-somos",
     seccionCapitulos: "#capitulos",
     seccionEquipo: "#equipo",
