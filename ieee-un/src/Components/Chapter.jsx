@@ -3,13 +3,13 @@ import { React, useState, useEffect } from 'react';
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { AiFillFacebook, AiFillInstagram } from "react-icons/ai";
 
-import { Link } from "react-router-dom"
+// import { Link } from "react-router-dom"
 
 import '../Styles/Chapter.sass'; 
 
 import { getChapterList } from './utils/chaptersDB'; 
 import Queue from './utils/Queue'; 
-import initial from '../Assets/chapters/AESS.png'; 
+import initial from '../Assets/chapters/APS.png'; 
 import routes from '../Helpers/routes';
 import Axios  from 'axios';
 
@@ -116,7 +116,7 @@ export const  Chapter = ({ changeColor }) => {
 						<h2>  {currentChapter.nameLong} </h2>
 						<p> {currentChapter.info} </p> 
                         {/* <a className = {`buttonMoreInfo ${currentChapter.colorId}-bg-color `} rel="noopener noreferrer" href={`${routes.chapter}/${currentChapter.name}`}> Ver más </a> */}
-						<Link className = {`buttonMoreInfo ${currentChapter.colorId}-bg-color `} rel="noopener noreferrer" to={`${routes.chapter}/${currentChapter.name}`} state={{ colorTest: currentChapter.colorId }}> Ver más </Link>
+						{/* <Link className = {`buttonMoreInfo ${currentChapter.colorId}-bg-color `} rel="noopener noreferrer" to={`${routes.chapter}/${currentChapter.name}`} state={{ colorTest: currentChapter.colorId }}> Ver más </Link> */}
 					</div>
 					<div className = "chapter-info__controls">
 						<button onClick = { prev }> <IoIosArrowBack /> Anterior </button>
