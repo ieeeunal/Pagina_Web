@@ -20,13 +20,14 @@ import { CardsList } from '../Components/CardsList';
 
 import team from '../Assets/team.png';
 import Hero from '../Components/Hero';
+import Modal from '../Components/Modal';
 import Form from '../Components/Form';
 import routes from '../Helpers/routes';
 import Footer from '../Components/Footer';
 import { Link } from 'react-router-dom';
 
 export default function LandingPage () {
-	const [color, setColor ] = useState('aess');
+	const [color, setColor ] = useState('aps');
 	console.log(color)
 
 	const changeColor = (id) => {
@@ -61,8 +62,10 @@ export default function LandingPage () {
 			<Hero backImage={Owl} chapterName="aess" color2="aess-color-b" secondColor="Active" >
 				<h2 className="title mr-5"> Ingenia tu camino </h2>
 				{/* <Link className="ml-4 ver-mas slide-bottom" to={routes.chapter}>Ver mas</Link> */}
-				<a className="ml-4 ver-mas slide-bottom" href={pdfInfo}>Ver mas</a>				
+				<a className="ml-4 ver-mas slide-bottom" href={pdfInfo}>Ver mas</a>	
+								
 			</Hero>
+			<Modal></Modal>
 
 			{/* <section className="section-3 mt-5  pt-5 full-width d-flex flex-column justify-content-center"> */}
 			<section className="section-3 full-width d-flex flex-column justify-content-center" id="quienes-somos" data-aos="fade-down"  data-aos-delay="500">
