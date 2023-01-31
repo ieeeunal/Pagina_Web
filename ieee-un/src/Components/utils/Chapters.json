@@ -1,41 +1,49 @@
 [
 	{
-		"name": "AESS", 
-		"nameLong": "Aerospace and Electronics Systems Society",
-		"info": "La grandeza del universo, se explora en cada paso de creatividad. Aprende a conocer lo que te observa desde lo alto. Ingenia nuevas formas para desarrollar la industria aeroespacial colombiana y cada vez, acercarte más a las estrellas.",
-		"colorId": "aess",
-		"facebook": "https://www.google.com",
-		"instagram": "https://www.google.com/search?q=carne"
-	},
-	{
 		"name": "APS", 
 		"nameLong": "Antennas and Propagation Society",
-		"info": "El capítulo de antenas y propagación, siendo el único capitulo estudiantil en el país, se centra en desarrollar proyectos enfocados al diseño, desarrollo e implementación de antenas que captan diversas señales para su posterior procesamiento de datos, en la actualidad, contando con la conexión directa con el capítulo aps profesional tiene grandes oportunidades de avance y desarrollo.",
-		"colorId": "aps"
-	},
-	{
-		"name": "EMC", 
-		"nameLong": "Electromagnetic Compatibility",
-		"info": "Siendo un capítulo que cuenta con el apoyo del grupo de investigación de compatibilidad electromagnética, es uno de los mas enfocados en la realización de estudios acerca del tema y publicaciones para mostrar los resultados obtenidos en sus trabajos, además de los diversos usos que estos puedan tener.",
-		"colorId": "emc"
+		"info": "¿Qué quienes somos? Somos la Sociedad de Antenas y Propagación única en Bogotá encargada de estudiar los fenómenos electromagnéticos, la propagación de ondas en diferentes medios y el diseño de antenas.  Encuentra con nosotros un mundo nuevo y fascinante donde las leyes de Maxwell y el inalámbrico son nuestro pilar y pasión ",
+		"colorId": "aps",
+		"facebook": "",
+		"instagram": "https://www.instagram.com/aps.unal/"
 	},
 		{
 		"name": "RAS", 
 		"nameLong": "Robotics and Automation Society",
-		"info": "Nuestro capitulo RAS es uno de los mas activos y representativos en el país, on el concurso de robótica mas grande en el mismo y el desarrollo de diversos proyectos enfocados en la aplicación de la robótica y automatización, que van desde a construcción de elementos ara uso interno hasta el diseño de iniciáticas para beneficio de diversas áreas aprovechando la interdisciplinariedad existente en nuestra rama.",
-		"colorId": "ras"
-	},
-
-		{
-		"name": "EDS", 
-		"nameLong": "Electronics Devices Society",
-		"info": "Creamos espacios donde los estudiantes de educación media y universitarios puedan fortalecer sus conocimientos en circuitos y electrónica de una manera entretenida. Buscamos expandir los limites del aprendizaje de esta area del conocimiento con un enfoque competitivo y mostrando lo que hacemos por medio de diversas actividades y proyectos",
-		"colorId": "eds"
+		"info": "¡Únete a nuestro grupo de robótica y descubre el emocionante mundo de la tecnología! Aprende y pon en práctica habilidades valiosas, colabora con otros apasionados y trabaja en proyectos emocionantes a través de la codificación y construcción de robots y sistemas automatizados. Cualquier persona tiene un lugar en el equipo, principiantes y expertos. Adéntrate en este mundo y comienza a explorar las posibilidades ilimitadas de la robótica",
+		"colorId": "ras",
+		"instagram":"https://www.instagram.com/ceimtun/"
 	},
 		{
-		"name": "COMPUTER", 
-		"nameLong": "Computer Society",
-		"info": "Con sus diversas e innovadoras herramientas busca llevar la programación y en general los temas de informática más allá de los ingenieros y directamente relacionados con esta. Además, con sus cursos y charlas motiva a sus voluntarios a desarrollar conocimiento s y habilidades en temas avanzados y para su posterior aplicación.",
-		"colorId": "computer"
+		"name": "TEMS", 
+		"nameLong": "Technology and Engineering Management Society",
+		"info": "Somos el primer TEMS de Colombia, desde nuestro equipo, buscamos brindarles las oportunidades necesarias para fortalecer las habilidades blandas a travès de diferentes actividades que brindamos (Talleres,  charlas, eventos , concursos , etc..), donde el estudiantado pueda participar y salir de su zona de confort.",
+		"colorId": "tems",
+		"facebook": "https://www.facebook.com/TEMSUNAL",
+		"instagram": "https://www.instagram.com/tems_un/"
+	},
+		{
+		"name": "EMB", 
+		"nameLong": "Technology and Engineering Management Society",
+		"info": "Somos un grupo de estudiantes y para estudiantes, unidos por nuestro interés en el avance de la ciencia y la tecnología en el campo de la salud y la bioingeniería. Trabajamos juntos para fomentar el aprendizaje y el desarrollo profesional a través de actividades prácticas y proyectos colaborativos. Nos esforzamos por ser líderes en nuestra comunidad y fomentar la participación activa en el progreso de la medicina y la biotecnología.",
+		"colorId": "tems",
+		"facebook": "https://www.facebook.com/TEMSUNAL",
+		"instagram": "https://www.instagram.com/tems_un/"
+	},
+		{
+		"name": "PES", 
+		"nameLong": "Power & Energy Society",
+		"info": "Si te interesa conocer todo sobre la energía eléctrica, desde generación, pasando por transmisión y distribución hasta uso final y eficiente de la misma, debes conocer a PES. Aquí encontraras cursos de formación, proyectos de inmersión y oportunidades para conocer todos los diversos procesos que se realizan en la industria para mantener funcionando todo a nuestro alrededor.",
+		"colorId": "pes",
+		"facebook": "https://www.facebook.com/wieunal/",
+		"instagram": "https://www.instagram.com/pes_unal/"
+	},
+		{
+		"name": "WIE", 
+		"nameLong": "Women In Engineering",
+		"info": "¿Quieres resaltar y engrandecer el papel de la mujer en las carreras STEM? Nuestro propósito en WIE es crear proyectos en los que podamos desarrollar este ideal. Acércate a nosotrxs con el objetivo de redefinir los roles de género para trabajar en la construcción de un mundo mejor y contribuir a otras formas de servicio a las comunidades.",
+		"colorId": "wie",
+		"facebook": "https://www.facebook.com/wieunal/",
+		"instagram": "https://www.instagram.com/wie_unal/"
 	}
 ]
