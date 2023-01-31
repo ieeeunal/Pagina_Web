@@ -1,16 +1,16 @@
 [
 {
-	"name": "Valentina Hernández",
+	"name": "Andrés Morales",
 	"role": "Presidente",
-	"id": "valentina",
-	"linkLinkedin": "https://www.linkedin.com/in/valentina-hernandez-mo/",
+	"id": "andres",
+	"linkLinkedin": "https://co.linkedin.com/in/andrés-morales-martínez-286857140",
 	"linkVarios": ""
 },
 {
-	"name": "Andrés Morales",
-	"role": "Vicepresidenta",
-	"id": "andres",
-	"linkLinkedin": "https://co.linkedin.com/in/andrés-morales-martínez-286857140",
+	"name": "Andrés Vallejo",
+	"role": "Vicepresidente",
+	"id": "vallejo",
+	"linkLinkedin": "https://www.linkedin.com/in/valentina-hernandez-mo/",
 	"linkVarios": ""
 },
 {
@@ -21,10 +21,10 @@
 	"linkVarios": ""
 },
 {
-	"name": "Diego Aguilar",
-	"role": "Tesorero",
-	"id": "diego",
-	"linkLinkedin": "",
+	"name": "Mauricio Rodriguez",
+	"role": "Diseñador Principal",
+	"id": "mauricio",
+	"linkLinkedin" : "https://www.linkedin.com/in/mauricio-rodríguez-becerra-bb7626126/",
 	"linkVarios": ""
 },
 {
@@ -35,9 +35,44 @@
 	"linkVarios": "https://julianflancheros.js.org"
 },
 {
-	"name": "Mauricio Rodriguez",
-	"role": "Coordinador de Medios",
-	"id": "mauricio",
+	"name": "Alejandro Ramirez",
+	"role": "Tesorero",
+	"id": "mario",
+	"linkLinkedin": "",
+	"linkVarios": ""
+},
+{
+	"name": "Angie Torres",
+	"role": "Coordinadora de Medios",
+	"id": "angie",
+	"linkLinkedin" : "https://www.linkedin.com/in/mauricio-rodríguez-becerra-bb7626126/",
+	"linkVarios": ""
+},
+{
+	"name": "Daniel Rincón",
+	"role": "Coordinador de Bienestar",
+	"id": "daniel",
+	"linkLinkedin" : "https://www.linkedin.com/in/mauricio-rodríguez-becerra-bb7626126/",
+	"linkVarios": ""
+},
+{
+	"name": "Esteban Figueroa",
+	"role": "Orquestador de actividades",
+	"id": "esteban",
+	"linkLinkedin" : "https://www.linkedin.com/in/mauricio-rodríguez-becerra-bb7626126/",
+	"linkVarios": ""
+},
+{
+	"name": "Mateo Caro",
+	"role": "Géstor de Información",
+	"id": "mateo",
+	"linkLinkedin" : "https://www.linkedin.com/in/mauricio-rodríguez-becerra-bb7626126/",
+	"linkVarios": ""
+},
+{
+	"name": "Marco Quimbay",
+	"role": "Coordinador de Integraciones",
+	"id": "marco",
 	"linkLinkedin" : "https://www.linkedin.com/in/mauricio-rodríguez-becerra-bb7626126/",
 	"linkVarios": ""
 }
