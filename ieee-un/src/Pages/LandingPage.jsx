@@ -12,19 +12,29 @@ import NavBar from "../Components/Navbar";
 import Media from "../Components/Media";
 
 import Owl from '../Assets/Buho.svg';
-import pdfInfo from '../Components/utils/IEEEUN.pdf';
+// import pdfInfo from '../Components/utils/IEEEUN.pdf';
 
 import '../Styles/LandingPage.sass';
 import { Chapter } from '../Components/Chapter';
 import { CardsList } from '../Components/CardsList';
+// import { firebase } from '../Firebase/ConfigFirebase';
 
 import team from '../Assets/team.png';
+import events from '../Assets/events.png';
+import learn from '../Assets/learn.png'
+
 import Hero from '../Components/Hero';
+import Calendar from '../Components/Calendar';
 import Modal from '../Components/Modal';
 import Form from '../Components/Form';
 import routes from '../Helpers/routes';
 import Footer from '../Components/Footer';
 import { Link } from 'react-router-dom';
+import WordCloud from '../Components/WordCloud';
+
+// const db = firebase.database(); 
+// const refMembers = db.ref(`members`); 
+// const refGeneral = db.ref(`general`); 
 
 export default function LandingPage () {
 	const [color, setColor ] = useState('aps');
@@ -62,7 +72,8 @@ export default function LandingPage () {
 			<Hero backImage={Owl} chapterName="aess" color2="aess-color-b" secondColor="Active" >
 				<h2 className="title mr-5"> Ingenia tu camino </h2>
 				{/* <Link className="ml-4 ver-mas slide-bottom" to={routes.chapter}>Ver mas</Link> */}
-				<a className="ml-4 ver-mas slide-bottom" href={pdfInfo}>Ver mas</a>	
+				{/* <a className="ml-4 ver-mas slide-bottom" href={pdfInfo}>Ver mas</a> */}
+				<a className="ml-4 ver-mas slide-bottom" href="https://drive.google.com/file/d/12vZ46vTwP1RkrBHCatfoaZt0Lbwy31l3/view?usp=sharing">Ver mas</a>
 								
 			</Hero>
 			<Modal></Modal>
@@ -90,7 +101,7 @@ export default function LandingPage () {
 					<div className="data-container row d-flex  justify-content-center align-items-center">
 						<div className="col d-flex justify-content-center" data-aos="fade-up" data-aos-delay="300">
 							<p className="a">
-								+162
+								+260
 							</p>
 							<p className="b">
 								Miembros
@@ -140,11 +151,39 @@ export default function LandingPage () {
 						<CardsList /> 
 					</div>
 				</div>
+				<div className = "arrow-down"> </div>
 			</section> 
 
-			{/* Form */}
+			{/* WordCloudThingToLearn */}
+			<section className = "position-relative full-width" id="ieeestaCharla" data-aos="">
+				<div className = "team-div d-flex flex-column align-items-center mb-5" id="equipo">
+					<img className = "team-icon" src= { learn } alt="" />
+					<div className = "row mt-3 align-items-center">
+						<div className = "col"><span className = "line-title" /></div>
+						<div className = "col team-title">¿Qué temas la gente quiere aprender con nosotros?</div>
+						<div className = "col"><span className = "line-title" /></div>
+					</div>				
+				</div>	
+				<WordCloud /> 
+			</section>
 
-			<section className = "position-relative" data-aos="zoom-in" id="comentarios">
+			
+			{ /* Events */ }
+			<section className = "position-relative full-width" id="eventos" data-aos="zoom-in">
+			<div className = "team-div d-flex flex-column align-items-center">
+				<img className = "team-icon" src= { events } alt="" />
+				<div className="row mt-3 align-items-center mt-5">
+					<div className="col"><span className="line-title" /></div>
+					<div className="col team-title">Eventos</div>
+					<div className="col"><span className="line-title" /></div>
+				</div>
+				</div>		
+				
+				<Calendar></Calendar>
+			</section>
+
+			{/* Form */}
+			<section className = "position-relative" data-aos="fade-down" id="comentarios">
 				<Form /> 
 			</section> 
 
