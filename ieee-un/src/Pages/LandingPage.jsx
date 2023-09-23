@@ -48,6 +48,7 @@ export default function LandingPage () {
 	useEffect(() => {
 		AOS.init();
 		AOS.refresh();
+		document.body.style.overflow = "visible";
 	}, []);
   
 	useEffect(() => {
@@ -76,7 +77,7 @@ export default function LandingPage () {
 				<a className="ml-4 ver-mas slide-bottom" href="https://drive.google.com/file/d/12vZ46vTwP1RkrBHCatfoaZt0Lbwy31l3/view?usp=sharing">Ver mas</a>
 								
 			</Hero>
-			<Modal></Modal>
+			{/* <Modal/> */}
 
 			{/* <section className="section-3 mt-5  pt-5 full-width d-flex flex-column justify-content-center"> */}
 			<section className="section-3 full-width d-flex flex-column justify-content-center" id="quienes-somos" data-aos="fade-down"  data-aos-delay="500">
