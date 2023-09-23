@@ -6,6 +6,7 @@ const routes= {
     changePassword: "/recover",
     chapter: "/Pagina_Web/chapter",
     chapterId: "/Pagina_Web/chapter/:chapterId",
+    login: "/login",
     notFound: "*",
 
 // Secciones 
@@ -13,6 +14,7 @@ const routes= {
     seccionQuienesSomos: "#quienes-somos",
     seccionCapitulos: "#capitulos",
     seccionEquipo: "#equipo",
+    seccionEventos: "#eventos",
     seccionComentarios: "#comentarios",
 
 // Rutas Admin
