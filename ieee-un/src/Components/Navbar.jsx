@@ -39,6 +39,7 @@ export default function NavBar () {
 		{ navLinkName: 'Quienes Somos', scrollToId: routes.seccionQuienesSomos },
 		{ navLinkName: 'Capítulos', scrollToId: routes.seccionCapitulos },
 		{ navLinkName: 'Equipo', scrollToId: routes.seccionEquipo },
+        { navLinkName: 'Eventos', scrollToId: routes.seccionEventos },
         { navLinkName: 'Comentarios', scrollToId: routes.seccionComentarios }
 	];
     
@@ -106,6 +107,10 @@ export default function NavBar () {
                                     Separated link
                                 </NavDropdown.Item>
                             </NavDropdown> */}
+                            
+                        </Nav>
+                        <Nav className="section__navbar-items">
+                            <a class="btn login" href={routes.login}>Iniciar Sesión</a>
                         </Nav>
                         {/* <Nav>
                             <Nav.Link href="#deets">More deets</Nav.Link>
