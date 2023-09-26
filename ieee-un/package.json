@@ -1,5 +1,5 @@
 {
-  "homepage": "https://IEEE-UN.github.io/Pagina_Web",
+  "homepage": "https://ieee-un.github.io/Pagina_Web/",
   "name": "ieee-un",
   "version": "0.1.0",
   "private": true,
@@ -10,6 +10,7 @@
     "aos": "^2.3.4",
     "axios": "^0.27.2",
     "bootstrap": "^5.2.0",
+    "firebase": "^10.4.0",
     "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.4.0",
