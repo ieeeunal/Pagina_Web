@@ -1,12 +1,11 @@
 const routes= {
 // Paginas
     home: "/Pagina_Web",
-    login: "/sign-in",
-    identidy: "/valideIdentidy",
-    changePassword: "/recover",
     chapter: "/Pagina_Web/chapter",
     chapterId: "/Pagina_Web/chapter/:chapterId",
-    login: "/login",
+    login: "/Pagina_Web/login",
+    identidy: "/valideIdentidy",
+    changePassword: "/recover",
     notFound: "*",
 
 // Secciones 
