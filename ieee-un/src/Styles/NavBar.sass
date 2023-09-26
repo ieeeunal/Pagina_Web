@@ -1,3 +1,10 @@
+$xs: 0,
+$sm: 576px,
+$md: 768px,
+$lg: 992px,
+$xl: 1200px,
+$xxl: 1400px
+
 .main-navbar
 	position: absolute
 	margin-left: 0px
@@ -18,22 +25,25 @@
 		li:hover > span
 			transition: .5s ease-out
 			width: 150px
+
+
+.navbar-nav .nav-link.active 
+	color: #31c5f4 !important
+	font-weight: 900
+
+.navbar-toggler-icon
+	filter: invert(1)
 	
 .scroll-navbar
-	background: #fff
+	background: #12153c
 	-webkit-box-shadow: 0px 10px 30px rgb(0 0 0 / 5%)
 	box-shadow: 0px 10px 30px rgb(0 0 0 / 5%)
 	padding: 0
-	position: fixed
-	top: -80px
 	-webkit-transition: -webkit-transform .5s
 	transition: -webkit-transform .5s
 	-o-transition: transform .5s
 	transition: transform .5s
 	transition: transform .5s, -webkit-transform .5s
-	-webkit-transform: translateY(80px)
-	-ms-transform: translateY(80px)
-	transform: translateY(80px)
 
 /*.logo-small 
 	padding: 2px
@@ -63,7 +73,7 @@
 	list-style: none
 	display: flex
 	flex-direction: row
-	column-gap: 50px
+	/* column-gap: 50px */
 	margin-bottom: 0
 	margin-top: 0
 
@@ -77,11 +87,14 @@
 .section__navbar
 	padding: 20px 30px /* Large padding which will shrink on scroll (using JS) */
 	transition: 0.4s /* Adds a transition effect when the padding is decreased */
-	position: fixed /* Sticky/fixed navbar */
+	/* position: fixed Sticky/fixed navbar */
 	width: 100%
 	z-index: 99
-	top: 0
+	/* top: 0 */
 
+/*@media (max-width: $md)
+	.section__navbar
+		display: none */
 
 .section__navbar-items a
 	color: #fff
@@ -93,6 +106,24 @@
 	border-radius: 4px
 	&:hover
 		color: #31c5f4
+
+.login
+	background: #31d2f2 !important
+	color: #000 !important
+	font-weight: 600 !important
+	float: right
+
+.section__navbar-items .login
+	text-align: center
+	text-decoration: none
+	padding: 10px
+	font-size: 18px
+	line-height: 25px
+	border-radius: 4px
+	&:hover
+		background: #0b5ed7 !important
+		color: #fff !important
+		border: solid #0b5ed7 1px
 
 .logo-small
 	transition: 0.4s
