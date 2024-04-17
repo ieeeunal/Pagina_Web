@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Pagina_Web/static/css/main.5c1198e3.css",
-    "main.js": "/Pagina_Web/static/js/main.a1b298dc.js",
+    "main.css": "/Pagina_Web/static/css/main.9fe25382.css",
+    "main.js": "/Pagina_Web/static/js/main.f2273f01.js",
     "static/js/853.46fc1e0f.chunk.js": "/Pagina_Web/static/js/853.46fc1e0f.chunk.js",
     "static/js/658.23a60143.chunk.js": "/Pagina_Web/static/js/658.23a60143.chunk.js",
     "static/js/651.1dcad611.chunk.js": "/Pagina_Web/static/js/651.1dcad611.chunk.js",
@@ -46,6 +46,7 @@
     "static/media/julian.jpg": "/Pagina_Web/static/media/julian.7676cf755b53fe33be1b.jpg",
     "static/media/PES.png": "/Pagina_Web/static/media/PES.ef61f1cea5595b393ab1.png",
     "static/media/marco.jpg": "/Pagina_Web/static/media/marco.3907e6454714e820b35b.jpg",
+    "static/media/test.png": "/Pagina_Web/static/media/test.df22e1541780b400cbf9.png",
     "static/media/mario.jpg": "/Pagina_Web/static/media/mario.83a83b1effc6191d49c5.jpg",
     "static/media/EMB.png": "/Pagina_Web/static/media/EMB.432a45855c6fc7b01e54.png",
     "static/media/COMPUTER.png": "/Pagina_Web/static/media/COMPUTER.8f3f22778e1e13c85a63.png",
@@ -57,11 +58,11 @@
     "static/media/instagram.svg": "/Pagina_Web/static/media/instagram.23c95988c7e6f9809ba405e2f522d791.svg",
     "static/media/Youtube.svg": "/Pagina_Web/static/media/Youtube.0878849f07cdb0bfafcde98851ba1f8d.svg",
     "static/media/facebook.svg": "/Pagina_Web/static/media/facebook.ebe96069a6bdebde405fbfd86379ca3d.svg",
-    "main.5c1198e3.css.map": "/Pagina_Web/static/css/main.5c1198e3.css.map",
-    "main.a1b298dc.js.map": "/Pagina_Web/static/js/main.a1b298dc.js.map"
+    "main.9fe25382.css.map": "/Pagina_Web/static/css/main.9fe25382.css.map",
+    "main.f2273f01.js.map": "/Pagina_Web/static/js/main.f2273f01.js.map"
   },
   "entrypoints": [
-    "static/css/main.5c1198e3.css",
-    "static/js/main.a1b298dc.js"
+    "static/css/main.9fe25382.css",
+    "static/js/main.f2273f01.js"
   ]
 }
