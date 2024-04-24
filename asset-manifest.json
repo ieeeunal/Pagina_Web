@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Pagina_Web/static/css/main.7e637332.css",
-    "main.js": "/Pagina_Web/static/js/main.c048fa0c.js",
+    "main.css": "/Pagina_Web/static/css/main.316f31a6.css",
+    "main.js": "/Pagina_Web/static/js/main.e51b342c.js",
     "static/js/853.46fc1e0f.chunk.js": "/Pagina_Web/static/js/853.46fc1e0f.chunk.js",
     "static/js/658.23a60143.chunk.js": "/Pagina_Web/static/js/658.23a60143.chunk.js",
     "static/js/563.c9a426de.chunk.js": "/Pagina_Web/static/js/563.c9a426de.chunk.js",
@@ -19,9 +19,13 @@
     "static/js/592.29e8db4c.chunk.js": "/Pagina_Web/static/js/592.29e8db4c.chunk.js",
     "static/js/543.1e9a4eed.chunk.js": "/Pagina_Web/static/js/543.1e9a4eed.chunk.js",
     "static/js/717.6c901000.chunk.js": "/Pagina_Web/static/js/717.6c901000.chunk.js",
-    "static/js/354.ee016872.chunk.js": "/Pagina_Web/static/js/354.ee016872.chunk.js",
+    "static/js/354.22344528.chunk.js": "/Pagina_Web/static/js/354.22344528.chunk.js",
     "static/js/62.68a0e459.chunk.js": "/Pagina_Web/static/js/62.68a0e459.chunk.js",
+    "static/js/922.90a44e04.chunk.js": "/Pagina_Web/static/js/922.90a44e04.chunk.js",
     "static/js/333.c4309cc0.chunk.js": "/Pagina_Web/static/js/333.c4309cc0.chunk.js",
+    "static/js/90.7a2bee03.chunk.js": "/Pagina_Web/static/js/90.7a2bee03.chunk.js",
+    "static/js/502.2ea733fa.chunk.js": "/Pagina_Web/static/js/502.2ea733fa.chunk.js",
+    "static/js/278.7cb9400d.chunk.js": "/Pagina_Web/static/js/278.7cb9400d.chunk.js",
     "static/media/EDS_IMAGE.png": "/Pagina_Web/static/media/EDS_IMAGE.81fa5dd67f30132785e0.png",
     "static/media/TEMS.png": "/Pagina_Web/static/media/TEMS.2fc4c520708f9aab7c86.png",
     "static/media/PES.png": "/Pagina_Web/static/media/PES.a09e3ce471c82a255e58.png",
@@ -30,6 +34,7 @@
     "static/media/COMPUTER.png": "/Pagina_Web/static/media/COMPUTER.0f9e060c0c2ee7995207.png",
     "static/media/Equipo.png": "/Pagina_Web/static/media/Equipo.28d7dd075d11c7a0361a.png",
     "static/media/AESS2.png": "/Pagina_Web/static/media/AESS2.b62dc8138f1aa1836330.png",
+    "static/media/intro.png": "/Pagina_Web/static/media/intro.d42da819535d60dfc53c.png",
     "static/media/popUpImage2.png": "/Pagina_Web/static/media/popUpImage2.02fc9e42919bab4bdb57.png",
     "static/media/AESS.png": "/Pagina_Web/static/media/AESS.82082b23a9fc508fa590.png",
     "static/media/RAS1.png": "/Pagina_Web/static/media/RAS1.37afc573918bec5a2801.png",
@@ -37,7 +42,6 @@
     "static/media/EDS2.png": "/Pagina_Web/static/media/EDS2.559243eda31a742ce471.png",
     "static/media/pngwing.png": "/Pagina_Web/static/media/pngwing.6e20b8e14c798d7e949c.png",
     "static/media/mateo.jpg": "/Pagina_Web/static/media/mateo.85a861a84577fa76afa0.jpg",
-    "static/media/intro.png": "/Pagina_Web/static/media/intro.6dd187684bed4350f59a.png",
     "static/media/EMC.png": "/Pagina_Web/static/media/EMC.28abac55bfd7c31f3037.png",
     "static/media/mauricio.png": "/Pagina_Web/static/media/mauricio.ffd830f68d2bf2416cbf.png",
     "static/media/EDS3.png": "/Pagina_Web/static/media/EDS3.71acd501a50b1f7a633f.png",
@@ -67,11 +71,11 @@
     "static/media/instagram.svg": "/Pagina_Web/static/media/instagram.23c95988c7e6f9809ba405e2f522d791.svg",
     "static/media/Youtube.svg": "/Pagina_Web/static/media/Youtube.0878849f07cdb0bfafcde98851ba1f8d.svg",
     "static/media/facebook.svg": "/Pagina_Web/static/media/facebook.ebe96069a6bdebde405fbfd86379ca3d.svg",
-    "main.7e637332.css.map": "/Pagina_Web/static/css/main.7e637332.css.map",
-    "main.c048fa0c.js.map": "/Pagina_Web/static/js/main.c048fa0c.js.map"
+    "main.316f31a6.css.map": "/Pagina_Web/static/css/main.316f31a6.css.map",
+    "main.e51b342c.js.map": "/Pagina_Web/static/js/main.e51b342c.js.map"
   },
   "entrypoints": [
-    "static/css/main.7e637332.css",
-    "static/js/main.c048fa0c.js"
+    "static/css/main.316f31a6.css",
+    "static/js/main.e51b342c.js"
   ]
 }
