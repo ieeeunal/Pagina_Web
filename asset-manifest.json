@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Pagina_Web/static/css/main.8aa52833.css",
-    "main.js": "/Pagina_Web/static/js/main.4074883f.js",
+    "main.css": "/Pagina_Web/static/css/main.534e22f9.css",
+    "main.js": "/Pagina_Web/static/js/main.4ce8f623.js",
     "static/js/853.46fc1e0f.chunk.js": "/Pagina_Web/static/js/853.46fc1e0f.chunk.js",
     "static/js/658.23a60143.chunk.js": "/Pagina_Web/static/js/658.23a60143.chunk.js",
     "static/js/563.c9a426de.chunk.js": "/Pagina_Web/static/js/563.c9a426de.chunk.js",
@@ -26,6 +26,7 @@
     "static/js/90.7a2bee03.chunk.js": "/Pagina_Web/static/js/90.7a2bee03.chunk.js",
     "static/js/502.2ea733fa.chunk.js": "/Pagina_Web/static/js/502.2ea733fa.chunk.js",
     "static/js/278.7cb9400d.chunk.js": "/Pagina_Web/static/js/278.7cb9400d.chunk.js",
+    "static/media/InfoDoc_IEEEUNAL.pdf": "/Pagina_Web/static/media/InfoDoc_IEEEUNAL.14cf05fe5ff03815bd41.pdf",
     "static/media/EDS_IMAGE.png": "/Pagina_Web/static/media/EDS_IMAGE.81fa5dd67f30132785e0.png",
     "static/media/TEMS.png": "/Pagina_Web/static/media/TEMS.2fc4c520708f9aab7c86.png",
     "static/media/PES.png": "/Pagina_Web/static/media/PES.a09e3ce471c82a255e58.png",
@@ -81,11 +82,11 @@
     "static/media/instagram.svg": "/Pagina_Web/static/media/instagram.23c95988c7e6f9809ba405e2f522d791.svg",
     "static/media/Youtube.svg": "/Pagina_Web/static/media/Youtube.0878849f07cdb0bfafcde98851ba1f8d.svg",
     "static/media/facebook.svg": "/Pagina_Web/static/media/facebook.ebe96069a6bdebde405fbfd86379ca3d.svg",
-    "main.8aa52833.css.map": "/Pagina_Web/static/css/main.8aa52833.css.map",
-    "main.4074883f.js.map": "/Pagina_Web/static/js/main.4074883f.js.map"
+    "main.534e22f9.css.map": "/Pagina_Web/static/css/main.534e22f9.css.map",
+    "main.4ce8f623.js.map": "/Pagina_Web/static/js/main.4ce8f623.js.map"
   },
   "entrypoints": [
-    "static/css/main.8aa52833.css",
-    "static/js/main.4074883f.js"
+    "static/css/main.534e22f9.css",
+    "static/js/main.4ce8f623.js"
   ]
 }
