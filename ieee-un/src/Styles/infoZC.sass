@@ -1,0 +1,93 @@
+@import "ZonaCentro.sass"
+
+#info
+    display: flex
+    flex-direction: column
+    .zonaSuperior
+        width: 100%
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        margin: 100px 0 0 0
+        .zsIzquierda
+            display: flex
+            flex-direction: row
+            img
+                height: 350px
+                width: 320px
+                object-fit: cover
+                border-radius: 7%
+                z-index: 1000
+                box-shadow: 0 0 0 rgba(0, 0, 0, 1)
+            .zsiFigura
+                height: 320px
+                width: 320px
+                background-color: #1B0F63
+                border-radius: 7%
+                margin: -25px -270px 0 0
+                transform: rotate(6.5deg)
+        .zsDerecha
+            margin: 0 0 0 50px
+            width: 500px
+            h2
+                font-weight: bolder
+                color: $zonac-color-e
+                margin: 0 0 15px 0
+    .zonaInferior
+        width: 100%
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        gap:100px
+        margin: 0 0 100px 0
+        .ziIzquierda
+            display: flex
+            flex-direction: row
+            img
+                height: 300px
+                width: 300px
+                border-radius: 7%
+                z-index: 1000
+                box-shadow: 0 0 0 rgba(0, 0, 0, 1)
+        .ziDerecha
+            width: 400px
+            h2
+                font-weight: bolder
+                color: $zonac-color-e
+                margin: 0 0 20px 0
+            
+@media (min-width: 768px) and (max-width: 991px)
+    #info
+    .zonaInferior, .zonaSuperior
+        flex-direction: column-reverse
+    .zonaSuperior
+        .zsDerecha
+            margin: 0 0 50px 0
+            width: 500px
+            h2
+                margin: 0
+    .zonaInferior
+        gap: 0px
+        margin: 50px 0 0 0 
+        .ziDerecha
+            width: auto
+
+
+@media (max-width: 768px) 
+    #info
+        .zonaInferior, .zonaSuperior
+            flex-direction: column-reverse
+        .zonaSuperior
+            .zsDerecha
+                margin: 50px 15px
+                width: auto
+                h2
+                    margin: 0
+        .zonaInferior
+            gap: 0px
+            margin: 50px 0 0 0 
+            .ziDerecha
+                margin: 50px 15px
+                width: auto

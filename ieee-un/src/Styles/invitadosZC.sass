@@ -1,0 +1,39 @@
+@import "ZonaCentro.sass"
+
+.guests
+    padding: 150px 0
+    .container
+    h2, p, h5
+        color: #fff
+    h2  
+        font-weight: bolder
+        font-size: 3.0rem
+    h5
+        font-weight: 600
+
+.guests-container 
+    display: flex 
+    flex-wrap: wrap
+    gap: 20px
+    justify-content: space-evenly
+
+.card-body
+    text-align: center
+      
+.guest-card 
+    width: calc(20% - 20px) /* Para pantallas mayores a 992px */
+    background: transparent !important
+    color: purple 
+
+@media (min-width: 768px) and (max-width: 991px)
+    .guest-card 
+        width: calc(33.33% - 20px) /* Para pantallas entre 768px y 991px */
+  
+@media (max-width: 767px) 
+    .guest-card 
+        width: calc(50% - 20px) /* Para pantallas menores a 768px */
+    .guests
+        .container
+        h2, p, h5
+            text-align: center 
+  

@@ -1,0 +1,136 @@
+@import "ZonaCentro.sass"
+
+#schedule
+    padding: 75px 0 
+    background-color: $zonac-color-a
+    /*padding: 40px 0 0 0*/
+    min-height: 10vh
+    h2
+        font-size: 50px
+        font-weight: bold
+        color: $p-color
+        text-shadow: -3px 0px 0px $zonac-color-b
+        margin: 0 0 20px 30px
+    .secciones
+        display: flex
+        flex-direction: row
+        padding: 10px 0 10px 0
+        gap: 40px
+        .seccIzq
+            display: flex
+            flex-direction: column
+            justify-content: center
+            gap: 10px
+            width: 30%
+            div
+                height: 70px
+            span
+                width: 30px
+                height: 30px
+                margin: 0 5px 0 0 
+            .izqSup
+                display: flex
+                flex-direction: row
+                align-items: center
+                background: linear-gradient($zonac-color-f, $zonac-color-a)
+                box-shadow: 2px 2px 0px $white-color
+                border-radius: 0 10px 10px 0
+                padding: 0 0 0 10px
+                .izqSup-Reloj
+                    background-image: url('../Assets/zonaCentro/clock.png')
+                    background-size: 30px 30px
+                    background-repeat: no-repeat
+                    background-position: center
+                .izqSup-textos
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    align-items: center 
+                    h3
+                        color: $p-color
+                        margin: 0
+                        font-size: 1.1rem
+            .izqInf
+                display: flex
+                flex-direction: row
+                align-items: center
+                background: linear-gradient($zonac-color-f, $zonac-color-a)
+                box-shadow: 2px 2px 0px $white-color
+                border-radius: 0 10px 10px 0 
+                padding: 10px 0 10px 10px
+                .izqInf-Pointer
+                    background-image: url('../Assets/zonaCentro/map-pin.png')
+                    background-size: 30px 30px
+                    background-repeat: no-repeat
+                    background-position: center
+                .izqInf-textos
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    align-items: center 
+                    h3
+                        font-size: 1.1rem
+                        color: $p-color
+                        margin: 0
+                    
+        .seccDer
+            width: 70%
+            div
+                display: flex
+                gap: 10px
+            h3
+                color: $p-color
+                font-weight: 400
+                padding: 10px 0 10px 0px
+            span
+                height: 10px
+                border-radius: 10px 0 0 10px
+                border: solid  $white-color
+                border-right: none
+            .seccDer-Evento
+                display: flex
+                align-items: center
+            .seccDer-t2
+                font-size: 2.5rem
+                font-weight: bolder
+                padding-left: 50px
+                width: 170px
+
+@media (max-width: 768px)
+    #schedule
+        .secciones
+            flex-direction: column
+            .seccIzq
+                width: 100%
+                .izqInf, .izqSup
+                    justify-content: center
+                    gap: 15px
+                    margin-bottom: 15px
+                    box-shadow: 0px 1px 5px 6px $white-color
+                    border-radius: 10px
+                    padding: 50px 25px
+                    margin: 15px
+                    .izqInf-textos, .izqSup-textos
+                        text-align: center
+                        h3
+                            font-size: 20px
+                        
+            .seccDer
+                width: 100%
+                .seccDer-Evento
+                    justify-content: flex-start
+                    .seccDer-Evento
+                    .seccDer-t2
+                        font-size: 50px
+                    .seccDer-c
+                        font-size: 25px
+                        padding: 0 30px
+                        font-weight: 600
+                    h3
+                        margin: 0 
+                span
+                    height: 15px
+                    border-radius: 10px
+                    margin: 5px 15px
+                    border-right: solid $white-color
+        
