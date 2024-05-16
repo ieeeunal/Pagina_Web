@@ -3,6 +3,14 @@
 $primary-color: rgba(18, 21, 61, 1)
 $secondary-bg-color: #070C20
 
+$logo-principal-color: #0b224e
+
+$logo-secondary-color: #30ddff
+.logo-secondary-color-color
+	fill: $logo-secondary-color
+.logo-secondary-color-bg-color
+	background: $logo-secondary-color
+
 $secondary-color: #fafafa
 
 $accent-color: #fafafa
@@ -11,29 +19,85 @@ $font-title-color: #fafafa
 $font-subtitle-color: #fafafa
 $font-text-color: #fafafa
 
-$card-color: #FFFFFF
+$white-color: #FFFFFF
+.white-color
+	fill: $white-color
+.white-bg-color
+	background: $white-color 
 
-$gray-color: rgba(2, 3, 4, .03)
+$gray-color: rgba(2, 3, 4, .1)
+
+$unrobot-color-a: #1F1F40
+.unrobot-color
+	fill: $unrobot-color-a
+.unrobot-bg-color-a, .unrobot-bg-color, .unrobot-bg2-color
+	background: $unrobot-color-a
+
+$zonac-color-f: #12153C
+$zonac-color-a: #1B0F63
+$zonac-color-b: #48185D
+$zonac-color-c: #63245D
+$zonac-color-d: #7B2B5E
+$zonac-color-e: #92335D
+$p-color: rgba(255, 255, 255, 0.9)
+
+//.zc-bg-color
+//	background: linear-gradient($zonac-color-a, $zonac-color-d)
 
 // carrousel
-$aess-color-a: #12153D
-$aess-color-b: #070C20
+
+$aess-color-a: #0c1a31
+$aess-color-b: #03102c
+$aess-second-color-a: #837f99
+$aess-second-color-b: #797b87
 .aess-bg-color
 	background: linear-gradient($aess-color-a, $aess-color-b)
+	/*background-image: url("../../Assets/test.png"), linear-gradient($aess-color-a, $aess-color-b)*/
+	/*background-size: cover*/
+	/*background-repeat: no-repeat*/
+	
+.aess-bg2-color
+	background: linear-gradient($aess-color-b, $aess-color-a)
+	/*background-image: url("../../Assets/test.png"), linear-gradient($aess-color-b, $aess-color-a)*/
+	/*background-size: cover*/
+	/*background-repeat: no-repeat*/
+
+$aess-bg-second-color: linear-gradient($aess-second-color-a, $aess-second-color-b)
+.aess-bg2-second-color
+	background: linear-gradient($aess-second-color-b, $aess-second-color-a)
+
 .aess-color
 	fill: $aess-color-a
+
+.aess-color-a
+	color: $aess-color-a 
+.aess-color-b
+	color: $aess-color-b
+.aess-bg-color-a
+	background: $aess-color-a
 .aess-bg-color-b
 	background: $aess-color-b
 	
 
-$aps-color-a: #737900
-$aps-color-b: #F4DE3A
+
+$aps-color-a: #3d0c0b
+$aps-color-b: #3a0707
 .aps-bg-color
 	background: linear-gradient($aps-color-a, $aps-color-b)
 .aps-color
 	fill: $aps-color-a
+
+.aps-color-a
+	color: $aps-color-a 
+.aps-color-b
+	color: $aps-color-b
+
 .aps-bg-color-b
 	background: $aps-color-b
+.aps-bg2-color
+	background: linear-gradient($aps-color-b, $aps-color-a)
+.aps-bg-color-a
+	background: $aps-color-a
 	
 
 $emc-color-a: #4A1A7A
@@ -42,45 +106,105 @@ $emc-color-b: #1E075A
 	background: linear-gradient($emc-color-a, $emc-color-b)
 .emc-color
 	fill: $emc-color-a
+
+.emc-color-a
+	color: $emc-color-a 
+.emc-color-b
+	color: $emc-color-b
 .emc-bg-color-b
 	background: $emc-color-b
-
+.emc-bg2-color
+	background: linear-gradient($emc-color-b, $emc-color-a)
+.emc-bg-color-a
+	background: $emc-color-a
+/*#070f28*/
 $ras-color-a: #12153D
-$ras-color-b: #070C20
+$ras-color-b: #070f28
 .ras-bg-color
 	background: linear-gradient($ras-color-a, $ras-color-b)
 .ras-color
 	fill: $ras-color-a
+.ras-color-a
+	color: $ras-color-a 
+.ras-color-b
+	color: $ras-color-b
 .ras-bg-color-b
 	background: $ras-color-b
+.ras-bg2-color
+	background: linear-gradient($ras-color-b, $ras-color-a)
+.ras-bg-color-a
+	background: $ras-color-a
 
-$eds-color-a: #3BA4FF
-$eds-color-b: #073F75
+
+$emb-color-a: #1e7d7d
+$emb-color-b: #1a616a
+.emb-bg-color
+	background: linear-gradient($emb-color-a, $emb-color-b)
+.emb-color
+	fill: $emb-color-a
+.emb-color-a
+	color: $emb-color-a 
+.emb-color-b
+	color: $emb-color-b
+.emb-bg-color-b
+	background: $emb-color-b
+.emb-bg2-color
+	background: linear-gradient($emb-color-b, $emb-color-a)
+.emb-bg-color-a
+	background: $emb-color-a
+
+$eds-color-a: #0e1a38
+$eds-color-b: $ras-color-b
 .eds-bg-color
 	background: linear-gradient($eds-color-a, $eds-color-b)
 .eds-color
 	fill: $eds-color-a
+.eds-color-a
+	color: $eds-color-a 
+.eds-color-b
+	color: $eds-color-b
 .eds-bg-color-b
 	background: $eds-color-b
+.eds-bg2-color
+	background: linear-gradient($eds-color-b, $eds-color-a)
+.eds-bg-color-a
+	background: $eds-color-a
 
-$computer-color-a: #7E352C
-$computer-color-b: #E54E4E
+/*#f9a41a*/
+$computer-color-a: #242424
+$computer-color-b: #171717
 .computer-bg-color
 	background: linear-gradient($computer-color-a, $computer-color-b)
 .computer-color
 	fill: $computer-color-a
+.computer-color-a
+	color: $computer-color-a 
+.computer-color-b
+	color: $computer-color-b
 .computer-bg-color-b
 	background: $computer-color-b
+.computer-bg2-color
+	background: linear-gradient($computer-color-b, $computer-color-a)
+.computer-bg-color-a
+	background: $computer-color-a
 
-$tems-color-a: #fcae1b
-$tems-color-b: #ff8601
+$tems-color-a: #ef8f00
+$tems-color-b: #c77700
 
 .tems-bg-color
 	background: linear-gradient($tems-color-a, $tems-color-b)
 .tems-color
 	fill: $tems-color-a
+.tems-color-a
+	color: $tems-color-a 
+.tems-color-b
+	color: $tems-color-b
 .tems-bg-color-b
 	background: $tems-color-b
+.tems-bg2-color
+	background: linear-gradient($tems-color-b, $tems-color-a)
+.tems-bg-color-a
+	background: $tems-color-a
 
 $wie-color-a: #4b1f5e
 $wie-color-b: #ad7ec6
@@ -89,17 +213,35 @@ $wie-color-b: #ad7ec6
 	background: linear-gradient($wie-color-a, $wie-color-b)
 .wie-color
 	fill: $wie-color-a
+.wie-color-a
+	color: $wie-color-a 
+.wie-color-b
+	color: $wie-color-b
 .wie-bg-color-b
 	background: $wie-color-b
+.wie-bg2-color
+	background: linear-gradient($wie-color-b, $wie-color-a)
+.wie-bg-color-a
+	background: $wie-color-a
 
-$pes-color-a: #99e2b3
-$pes-color-b: #016566
+
+
+$pes-color-a: #117c08
+$pes-color-b: #0c5306
 
 .pes-bg-color
 	background: linear-gradient($pes-color-a, $pes-color-b)
 .pes-color
 	fill: $pes-color-a
+.pes-color-a
+	color: $pes-color-a 
+.pes-color-b
+	color: $pes-color-b
 .pes-bg-color-b
 	background: $pes-color-b
+.pes-bg2-color
+	background: linear-gradient($pes-color-b, $pes-color-a)
+.pes-bg-color-a
+	background: $pes-color-a
 
 
