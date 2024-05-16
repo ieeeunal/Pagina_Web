@@ -10,39 +10,44 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
-export default function NavBar () {
-    const [logeo, setLogeo] = useState(false)
-    const [rol, setRol] = useState('')
+export default function NavBar(props) {
+    // const [dataPage, setDataPage] = useState(props.chapterName);
+    const [logeo, setLogeo] = useState(false);
+    const [rol, setRol] = useState('');
     useEffect(() => {
-        if(sessionStorage.getItem('token') && sessionStorage.getItem('rolUser')){
-          setLogeo(true);
-          setRol(sessionStorage.getItem('rolUser'));
-        } 
+        if (sessionStorage.getItem('token') && sessionStorage.getItem('rolUser')) {
+            setLogeo(true);
+            setRol(sessionStorage.getItem('rolUser'));
+        }
+
+        // if (["aess", "aps", "ras", "wie", "pes", "emc", "emb", "eds", "computer", "tems"].includes(dataPage)) {
+        //     setDataPage(props.chapterName)
+        // } else if (dataPage === "zc"){   
+        //     setDataPage("zc")  
+        // }
     }, [])
-    
-    console.log("el rol del visitante es: "+rol)
-     
-    const salir=()=>{
+
+    //console.log("el rol del visitante es: "+rol)
+
+    const salir = () => {
         sessionStorage.clear()
-        window.location.href="/"
+        window.location.href = "/"
     }
 
     // const navLinks = [
     //     { navLinkName: 'Inicio', scrollToId: routes.seccionInicio },
-	// 	{ navLinkName: 'Quienes Somos', scrollToId: routes.seccionQuienesSomos },
-	// 	{ navLinkName: 'Capítulos', scrollToId: routes.seccionCapitulos },
-	// 	{ navLinkName: 'Equipo', scrollToId: routes.seccionEquipo },
+    // 	{ navLinkName: 'Quienes Somos', scrollToId: routes.seccionQuienesSomos },
+    // 	{ navLinkName: 'Capítulos', scrollToId: routes.seccionCapitulos },
+    // 	{ navLinkName: 'Equipo', scrollToId: routes.seccionEquipo },
     //     { navLinkName: 'Comentarios', scrollToId: routes.seccionComentarios }
-	// ];
+    // ];
 
-    const navLinks = [
-		{ navLinkName: 'Quienes Somos', scrollToId: routes.seccionQuienesSomos },
-		{ navLinkName: 'Capítulos', scrollToId: routes.seccionCapitulos },
-		{ navLinkName: 'Equipo', scrollToId: routes.seccionEquipo },
-        { navLinkName: 'Eventos', scrollToId: routes.seccionEventos },
-        { navLinkName: 'Comentarios', scrollToId: routes.seccionComentarios }
-	];
-    
+    // const navLinks = [
+    //     { navLinkName: 'Quienes Somos', scrollToId: routes.seccionQuienesSomos },
+    //     { navLinkName: 'Capítulos', scrollToId: routes.seccionCapitulos },
+    //     { navLinkName: 'Equipo', scrollToId: routes.seccionEquipo }
+    // ];
+
     // window.onscroll = function() {scrollFunction()};
 
     // function scrollFunction() {
@@ -60,17 +65,19 @@ export default function NavBar () {
 
     return (
         <>
-            <Navbar collapseOnSelect expand="md" className="section__navbar scroll-navbar"  id="navbar" sticky="top" >
+            <Navbar collapseOnSelect expand="md" className={`${props.chapterName}-bg-color section__navbar scroll-navbar`} id="navbar"   >
                 <Container>
-                    <Navbar.Brand href={routes.home}>
-                        <img
-                            alt="logo IEEE-UN"
-                            src={logo}
-                            width="30"
-                            height="30"
-                            className="d-inline-block align-top logo-small"
-                            id="logo"
-                        />{' '}
+                    <Navbar.Brand>
+                        <Link to={routes.home}>
+                            <img
+                                alt="logo IEEE-UN"
+                                src={logo}
+                                width="30"
+                                height="30"
+                                className="d-inline-block align-top logo-small"
+                                id="logo"
+                            />{' '}
+                        </Link>
                     </Navbar.Brand>
                     {/* <Navbar.Brand href="#home">
                         <a className="section__navbar-logo" rel="noopener noreferrer" href={routes.home}>
@@ -82,7 +89,7 @@ export default function NavBar () {
                         <Nav className="me-auto section__navbar-items">
 
                             {
-                                navLinks.map(id => {
+                                props.siteNavLinks.map(id => {
                                     return (
                                         <Nav.Link className="section__navbar-item" href={id.scrollToId}>
                                             {id.navLinkName}
@@ -107,11 +114,11 @@ export default function NavBar () {
                                     Separated link
                                 </NavDropdown.Item>
                             </NavDropdown> */}
-                            
+
                         </Nav>
-                        <Nav className="section__navbar-items">
+                        {/* <Nav className="section__navbar-items">
                             <a class="btn login" href={routes.login}>Iniciar Sesión</a>
-                        </Nav>
+                        </Nav> */}
                         {/* <Nav>
                             <Nav.Link href="#deets">More deets</Nav.Link>
                             <Nav.Link eventKey={2} href="#memes">
