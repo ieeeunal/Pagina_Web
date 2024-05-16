@@ -1,7 +1,7 @@
 {
-  "homepage": "https://ieee-un.github.io/Pagina_Web/",
-  "name": "ieee-un",
-  "version": "0.1.0",
+  "homepage": "https://ieeeunal.github.io/Pagina_Web/",
+  "name": "ieeeunal",
+  "version": "0.3.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
@@ -11,7 +11,9 @@
     "axios": "^0.27.2",
     "bootstrap": "^5.2.0",
     "firebase": "^10.4.0",
+    "framer-motion": "^11.1.7",
     "gh-pages": "^4.0.0",
+    "pattern.css": "^1.0.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.4.0",
     "react-dom": "^18.2.0",
