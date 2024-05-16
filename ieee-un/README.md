@@ -93,7 +93,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 ### Link page deploy 
-https://ieee-un.github.io/Pagina_Web/
+https://ieeeunal.github.io/Pagina_Web/
 
 ### Some mockups done
 
