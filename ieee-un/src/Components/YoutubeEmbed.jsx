@@ -6,9 +6,9 @@ const YoutubeEmbed = (props) => {
 
   return (
     <div>
-        <h3>YoutubeEmbed</h3>
+        <h3>{props.title}</h3>
 
-        <h3>conocenos mas en nuestras clases </h3>
+        <h4>{props.message}</h4>
         <div className="video-responsive">
             <iframe
             src={`https://www.youtube.com/embed/${props.embedId}`}
