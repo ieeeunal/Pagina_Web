@@ -4,8 +4,12 @@ const routes= {
     chapter: "/Pagina_Web/chapter",
     chapterId: "/Pagina_Web/chapter/:chapterId",
     login: "/Pagina_Web/login",
-    identidy: "/valideIdentidy",
-    changePassword: "/recover",
+    identidy: "/Pagina_Web/valideIdentidy",
+    changePassword: "/Pagina_Web/recover",
+    contact: "/Pagina_Web/contact",
+    events: "/Pagina_Web/events",
+    zonaCentro: "/Pagina_Web/zona-centro",
+    unRobot: "/Pagina_Web/unRobot",
     notFound: "*",
 
 // Secciones 
