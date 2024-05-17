@@ -1,10 +1,10 @@
 import React from 'react'; 
 
 const Hero = ( props ) => {
-  let SecondSection = <section className={`section-2 ${props.chapterName}-bg-color-b`} ></section>;
+  let SecondSection = <section className={`section-2 ${props.chapterName}-bg-color-a`} ></section>;
   return (
     <>
-      <section className={`section-1 ${props.chapterName}-bg-color`}>
+      <section className={`section-1 ${props.chapterName}-bg2-color`}>
         <div className="heroSection">
           <div className="heroSection-text">
             {props.children}
@@ -12,7 +12,7 @@ const Hero = ( props ) => {
           </div>
         </div>
       </section>
-      {props.secondColor === "Active" ? SecondSection : SecondSection = "0"}
+      {props.secondColor === "Active" ? SecondSection : SecondSection = ""}
     </>
   )
 }
