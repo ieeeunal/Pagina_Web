@@ -9,7 +9,7 @@ $xxl: 1400px
 
 @media (max-width: $lg)
 	.member-card
-		width: 90vw !important
+		width: 80vw !important
 		h2
 			font-size: 14pt !important
 		h3
@@ -18,7 +18,6 @@ $xxl: 1400px
 
 .member-card
 	transition: 0.4s ease-out
-	z-index: 2000
 	padding-top: 0px
 	position: relative !important
 	margin: 35px
@@ -28,7 +27,9 @@ $xxl: 1400px
 	box-shadow: 0px 3px 20px 0px rgb(0 0 0 / 20%)
 	text-align: center
 	align-content: center
-	h2 
+	overflow:hidden
+	h2
+		color: $white-color 
 		margin: auto
 		position: relative
 		right: 0 !important
@@ -48,32 +49,38 @@ $xxl: 1400px
 		padding: 0 15px
 		opacity: 0
 		cursor: pointer
-		/* transition effect. not necessary */
 		transition: opacity .2s, visibility .2s
+	&:hover
+		/*background: $logo-secondary-color*/
+		box-shadow: 0px 3px 20px 0px rgb(20 20 20 / 20%)
 
+.member-card:hover .img-container
+	/*border: solid $logo-secondary-color 5px*/
 
-	div.img-container
+div.img-container
+	margin: auto
+	$dim: 200px
+	height: 120px
+	width: 120px
+	top: -30px
+	display: block
+	border-radius: 100%
+	overflow: hidden
+	border: solid $gray-color 5px
+	position: relative !important
+	img
+		width: 100%
+		object-fit: cover
 		margin: auto
-		$dim: 200px
-		height: 120px
-		width: 120px
-		top: -30px
-		display: block
-		border-radius: 100%
-		overflow: hidden
-		border: solid $gray-color 5px
-		position: relative !important
-		img
-			width: 100%
-			object-fit: cover
-			margin: auto
-			bottom: 0px
-			
+		bottom: 0px
+
+
 .member-card:hover a
 	visibility: visible
 	opacity: 1
 	transition: .4s ease-out 
 	scale: 1.5
+	
 
 .member-card:hover h2, .member-card:hover h3
 	transform: translateY(-1em)
@@ -81,3 +88,40 @@ $xxl: 1400px
 .member-card:hover img
 	transform: scale(1.1)
 	transition: 0.4s ease-out
+
+.pointPatter
+	background-image: radial-gradient(currentColor 1px, transparent 1px)
+	background-size: calc(10* 1px) calc(10* 1px)
+	position: absolute
+	content: ""
+	bottom: 0
+	left: 0
+	width: 120px
+	height: 120px
+	opacity: 0
+	visibility: hidden
+	z-index: -1
+	-webkit-transition: all .2s ease 0s
+	-o-transition: all .2s ease 0s
+	transition: all .2s ease 0s
+
+.member-card:hover > .pointPatter
+	-webkit-transform: translate(-30px, 30px)
+	-ms-transform: translate(-30px, 30px)
+	transform: translate(-30px,30px)
+	opacity: 1
+	visibility: visible
+	z-index: -1
+
+
+/*border-radius: 76% 24% 56% 44% / 21% 36% 64% 79% */
+.member-card::after
+	width: 70vmin
+	height: 70vmin
+	left: auto
+	right: -10vmin
+	top: auto
+	bottom: 0
+	animation: morph 10s linear infinite alternate, spin 26s linear infinite reverse
+	transform-origin: 20% 20%
+
