@@ -1,5 +1,5 @@
 // Form 
-import { React, useEffect, useState} from 'react'; 
+import React, { useEffect, useState} from 'react'; 
 
 import styles from '../Styles/Form.module.sass'; 
 
@@ -7,7 +7,7 @@ import Axios from "axios";
 import Swal from "sweetalert2";
 import InlineError from './InlineError';
 
-import { validateEmail, validateFullName, validateMessage } from '../Components/utils/Validation';
+import { validateEmail, validateFullName, validateMessage } from './utils/Validation';
 // import nodemailer from "nodemailer";
 
 // const nodemaller = require("nodemaller");
@@ -86,7 +86,7 @@ export default function Form () {
 	
 	return (
 		<div className = "d-flex flex-column center px-4 px-md-0">
-			<h1 className ={`container ${styles.formTitle} my-5`}> Contáctanos </h1>
+								
 			<form className = {`container ${styles.registerForm}`} method="POST" action="https://script.google.com/macros/s/AKfycbwvc4Uz2Nn-ixdCdDLLLw1ilF6ePdk_XLJLJF9X0LrFpAmjdV6pWEdKV3wzcLnqma8-DA/exec" id="test">
 			
 				<div className = "row my-2">
