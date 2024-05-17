@@ -1,0 +1,190 @@
+@import "app.sass"
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap')
+
+
+.jaro-title
+    font-family: "Jaro", sans-serif
+    font-optical-sizing: auto
+    font-weight: 400
+    font-style: normal
+    letter-spacing: 5px
+
+.heroUNR
+    display: flex
+    flex-direction: row
+    align-items: center
+    .heroUNR_edicion
+        display: flex
+        flex-direction: column
+        color: $white-color
+        span
+            display: inline-block
+            font-size: 75px
+        b, span
+            margin: 0
+            text-transform: uppercase
+            padding: 0 !important
+            text-align: left
+        b
+            font-size: 30px
+    h2
+        font-weight: 600
+        margin: 0
+        text-transform: uppercase
+        font-size: 180px
+        margin-bottom: 0 !important
+
+    
+
+.introUNRobot-container_tabla
+    display: flex 
+    flex-direction: row
+
+.introUNRobot-container_tabla-texto
+    span    
+        color: $white-color
+        background: $unrobot-color-a
+        padding: 10px
+        display: inline-block
+        font-size: 60px
+        margin-left: -120px
+    h2
+        font-size: 80px
+        color: $unrobot-color-a
+    h2, span
+        text-transform: uppercase
+    p 
+        margin-top: 50px
+            
+#introUNRobot
+    padding-top: 150px
+
+.dot
+    height: 750px
+    width: 750px
+    background-color: #C4C4C4
+    border-radius: 50%
+    position: absolute
+    left: -12%
+
+.introUNRobot-container_tabla-imagen
+    .intro
+        width: 500px
+        position: relative
+        z-index: 2
+
+
+.section2-UNR
+    position: relative 
+    z-index: 3
+    .participarUNRobot-container_tabla
+        display: flex 
+        flex-direction: row
+        align-items: center
+        padding: 50px 0 
+    .participarUNRobot-container_tabla-texto
+        span    
+            color: $unrobot-color-a
+            background: $white-color
+            padding: 10px
+            display: inline-block
+            font-size: 60px
+            margin-left: 0
+        b 
+            font-size: 80px
+            color: $white-color
+            margin-left: 80px
+        h1, span
+            text-transform: uppercase
+        p 
+            margin-top: 50px
+            color: $white-color
+.participarUNRobot-container_tabla-imagen
+    text-align: center
+    .intro
+        width: 450px
+
+@media (min-width: 769px)  and (max-width: 991px)
+    .introUNRobot-container_tabla
+        display: flex 
+        flex-direction: column-reverse
+    .introUNRobot-container_tabla-texto
+        text-align: center
+        span
+            margin-left: 0px
+        h1, span, p 
+            text-align: center
+        h2, span
+            font-size: 60px
+            span, b
+                font-size: 60px
+    .heroUNR
+        flex-direction: column
+        align-items: baseline
+        .heroUNR_edicion
+            b, span
+                text-align: justify
+    .dot
+        left: 0
+        right: 0
+        margin-left: auto
+        margin-right: auto
+        width: 100%
+        background: $unrobot-color-a
+    .introUNRobot-container_tabla-imagen
+        text-align: center
+        .intro
+            width: 350px
+    .section2-UNR
+        .participarUNRobot-container_tabla-texto
+            h2
+                text-align: center
+                span, b
+                    font-size: 60px
+                    margin-left: 0
+
+        .participarUNRobot-container_tabla-imagen
+            .intro
+                width: 350px
+
+@media (max-width: 768px)
+    .introUNRobot-container_tabla
+        display: flex 
+        flex-direction: column-reverse
+    .introUNRobot-container_tabla-texto
+        text-align: center
+        span
+            margin-left: 0px
+        h1, span, p 
+            text-align: center
+        h2, span
+            font-size: 60px
+            span, b
+                font-size: 60px
+    .heroUNR
+        flex-direction: column
+        .heroUNR_edicion
+            b, span
+                text-align: center
+    .dot
+        left: 0
+        right: 0
+        margin-left: auto
+        margin-right: auto
+        width: 100%
+        background: $unrobot-color-a
+    .introUNRobot-container_tabla-imagen
+        text-align: center
+        .intro
+            width: 350px
+    .section2-UNR
+        .participarUNRobot-container_tabla-texto
+            h2
+                text-align: center
+                span, b
+                    font-size: 60px
+                    margin-left: 0
+
+        .participarUNRobot-container_tabla-imagen
+            .intro
+                width: 350px
