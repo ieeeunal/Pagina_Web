@@ -7,17 +7,17 @@ import '../Styles/CardsList.sass';
 import { MemberCard } from './MemberCard.jsx'; 
 import team from './utils/Members.json'; 
 
-export const CardsList = () => {
+export const CardsList = ({fiilColorIcon}) => {
 	// const [team, setTeam] = useState([]);
 
 	// useEffect(() => {
 	// 	Axios.get("/member/list").then((result) => {
 	// 	  setTeam(result.data);
 	// 	});
-	//   }, []);
-
+	//  }, []);
+	// console.log(team)
 	const getCard = () => {
-		// console.log(membersList); 
+		// console.log(team); 
 		const members = team.map((integrante, i) => {
 			let photo; 
 			try{
@@ -34,7 +34,7 @@ export const CardsList = () => {
 				}
 			}
 			return (
-				<MemberCard key={i} name = {integrante.name} role = {integrante.role} img = {photo}  linkLinkedin={integrante.linkLinkedin} linkVarios={integrante.linkVarios} delay={((i*400))} />
+				<MemberCard key={i} name = {integrante.name} role = {integrante.role} img = {photo}  linkLinkedin={integrante.linkLinkedin} linkVarios={integrante.linkVarios} delay={((i*400))} fiilColorIcon = {fiilColorIcon}/>
 			)
 		})
 		return members; 
