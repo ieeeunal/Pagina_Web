@@ -1,19 +1,133 @@
-
 @import "defaults/colors.sass"
 
-.containerColor
-    display: flex
-    align-items: center
-    justify-content: center
-    align-content: center
-    background-color: $aess-color-b
-    
+.container
+    padding: 70px 50px
+    position: relative
+    z-index: 3
 
-.containerColor p
+.containerData > *
+    width: calc(100% / 3)
+
+.containerData
     display: flex
-    align-items: center
+    align-items: flex-start
     justify-content: center
-    align-content: center
+
+.containerBranding p
+    display: flex
     color: #fff
-    padding: 25px 0
+    padding: 10px 0
     margin-bottom: 0
+    font-size: 14pt
+
+.containerLocation
+    color: #fff
+    padding: 10px 0
+    margin-bottom: 0
+    font-size: 14pt
+    a
+        text-decoration: none
+        color: #fff
+        &:hover
+            color: $logo-secondary-color
+
+.containerBranding
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    column-gap: 20px
+    align-items: center
+
+.containerMenu
+    display: flex
+    flex-direction: column
+    align-items: center
+    h2 
+        color: $logo-secondary-color
+        font-weight: 750
+        font-size: 20px
+        text-transform: uppercase
+        padding: 15px 0
+    a
+        text-decoration: none
+        color: #fff
+        &:hover
+            color: $logo-secondary-color
+
+.containerFirm 
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+    color: #fff
+    p
+        padding: 10px 0
+        margin-bottom: 0
+        text-align: center
+    span
+        display: contents
+        color: #31d2f2
+        font-size: 14pt
+
+.containerMedia
+    display: flex
+    column-gap: 15px
+    img
+        width: 25px
+        &:hover  
+            transform: scale(1.1)
+            transition: all 0.5s
+
+.separator
+    position: relative
+    z-index: 5
+    color: #fff
+    margin: 0
+
+.bgImage
+    position: absolute
+    width: 600px
+    height: 600px
+    top: -300px
+    right: 0px
+    background-repeat: no-repeat
+    clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0% 100%)
+    filter: opacity(0.2)
+
+
+@media (min-width: 768px) and (max-width: 991px)
+    .containerData
+        flex-direction: column
+        text-align: center
+    .containerData > *
+        width: 100%
+    .container
+        padding: 150px 50px
+    .bgImage
+        width: 100%
+        height: 90vw
+        background-size: auto 100%
+        background-position: center 
+        top: 10%
+        clip-path: none
+
+
+@media (max-width: 767px) 
+    .containerData
+        flex-direction: column
+        text-align: center
+    .containerData > *
+        width: 100%
+    .container
+        padding: 150px 50px
+    .containerBranding
+        img
+            display: none !important
+    .bgImage
+        width: 100%
+        height: 90vh
+        background-size: auto 100%
+        background-position: center 
+        top: 7%
+        clip-path: none
+
