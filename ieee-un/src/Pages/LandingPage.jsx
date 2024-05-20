@@ -150,17 +150,20 @@ export default function LandingPage() {
 						<Chapter changeColor={changeColor} color={color} />
 					</section>
 
-					{/* WordCloudThingToLearn */}
-					<section className="position-relative full-width" id="ieeestaCharla" data-aos="">
-						<div className="team-div d-flex flex-column align-items-center mb-5" id="equipo">
-							<img className="team-icon" src={learn} alt="" />
-							<div className="row mt-3 align-items-center">
-								<div className="col"><span className="line-title" /></div>
-								<div className="col team-title">¿Qué temas la gente quiere aprender con nosotros?</div>
-								<div className="col"><span className="line-title" /></div>
+					{ /* Cursos */}
+					<section className="position-relative full-width pt-5" style={{ height: 'fit-content' }} data-aos="zoom-in">				    {/*<h3>TEST</h3> */}
+						{/* WordCloudThingToLearn */}
+						<div className={`position-relative full-width`} id="ieeestaCharla" data-aos="">
+							<div className="team-div d-flex flex-column align-items-center mb-5" id="temas">
+								<img className="team-icon" src={learn} alt="" />
+								<div className="row mt-3 align-items-center">
+									<div className="col"><span className={`line-title ${color}-bg2-color`} /></div>
+									<div className="col team-title">Learn with us</div>
+									<div className="col"><span className={`line-title ${color}-bg2-color`} /></div>
+								</div>
 							</div>
+							<WordCloud />
 						</div>
-						<WordCloud />
 					</section>
 
 					{ /* Team */}
