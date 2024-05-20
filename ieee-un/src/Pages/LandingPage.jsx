@@ -144,10 +144,10 @@ export default function LandingPage() {
 								</div>
 							</div>
 						</div>
-					</section> 
+				</section> 
 
 				{ /* Carousel */}
-				<section className={`position-relative full mt-5 transition-short ${color}-bg-color `} id="capitulos">
+				<section className={`section-4 position-relative full transition-short ${color}-bg2-color `}>
 					<Chapter changeColor={changeColor} color={color} />
 				</section>
 
