@@ -43,11 +43,15 @@ import ColorSelecter from '../Components/ColorSelecter';
 // const refGeneral = db.ref(`general`); 
 
 export default function LandingPage () {
-	const [color, setColor ] = useState('aps');
-	console.log(color)
+	const listColors = ["aess", "aps", "ras", "wie", "pes", "emc", "emb", "eds", "computer", "tems", "zc"]
+	const [color, setColor ] = useState('aess');
+	const siteNavLinks = [
+        { navLinkName: 'Quienes Somos', scrollToId: routes.seccionQuienesSomos },
+        { navLinkName: 'Capítulos', scrollToId: routes.seccionCapitulos },
+        { navLinkName: 'Equipo', scrollToId: routes.seccionEquipo }
+    ];
 
 	const changeColor = (id) => {
-		console.log(id)
 		setColor(id);
 	}
 
@@ -55,21 +59,13 @@ export default function LandingPage () {
 		AOS.init();
 		AOS.refresh();
 		document.body.style.overflow = "visible";
+		let colorSelected = listColors[Math.floor(Math.random() * listColors.length)];
+		setColor(colorSelected);
 	}, []);
   
 	useEffect(() => {
 		document.body.style.overflow = "visible";
 	}, []);
-
-	// window.onscroll = function() {scrollFunction()};
-
-	// function scrollFunction() {
-	// 	if (document.body.scrollTop === 0 || document.documentElement.scrollTop === 0 ) {
-	// 		document.getElementById("inicio").style.margin = "50px 0";	
-	// 	} else {
-	// 		document.getElementById("inicio").style.margin = "0";
-	// 	}
-	// }
 	
 	return (
 		<>
