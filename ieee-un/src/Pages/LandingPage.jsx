@@ -71,13 +71,12 @@ export default function LandingPage() {
 		<>
 			<Main colorBackground={color} siteNavLinks={siteNavLinks}>
 				<div id="inicio"></div>
-				<NavBar />
 				<Media />
-				<Hero backImage={Owl} chapterName="aess" color2="aess-color-b" secondColor="Active" >
-					<h2 className="title mr-5"> Ingenia tu camino </h2>
+				<Hero backImage={Owl} chapterName={color} color2={`${color}-color-b}`} secondColor="Active" >
+					<h2 className="title mr-5"> IngEEEnia tu camino UNAL </h2>
 					{/* <Link className="ml-4 ver-mas slide-bottom" to={routes.chapter}>Ver mas</Link> */}
 					{/* <a className="ml-4 ver-mas slide-bottom" href={pdfInfo}>Ver mas</a> */}
-					<a className="ml-4 ver-mas slide-bottom" href="https://drive.google.com/file/d/12vZ46vTwP1RkrBHCatfoaZt0Lbwy31l3/view?usp=sharing">Ver mas</a>
+					<a className="ml-4 ver-mas slide-bottom" href={pdfInfo}>Ver mas</a>
 
 				</Hero>
 				{/* <Modal/> */}
@@ -182,8 +181,6 @@ export default function LandingPage() {
 							<div className="col"><span className="line-title" /></div>
 						</div>
 					</div>
-
-					<Calendar></Calendar>
 				</section>
 			</Main>
 		</>
