@@ -70,7 +70,8 @@ export default function LandingPage() {
 	return (
 		<>
 			<Main colorBackground={color} siteNavLinks={siteNavLinks}>
-				<div id="inicio">				<Media />
+				<div id="inicio">
+					<Media />
 					<Hero backImage={Owl} chapterName={color} color2={`${color}-color-b}`} secondColor="Active" >
 						<h2 className="title mr-5"> IngEEEnia tu camino UNAL </h2>
 						{/* <Link className="ml-4 ver-mas slide-bottom" to={routes.chapter}>Ver mas</Link> */}
@@ -179,7 +180,7 @@ export default function LandingPage() {
 										<div className="col"><span className={`line-title ${color}-bg2-color`} /></div>
 									</div>
 								</div>
-								<CardsList fiilColorIcon={color} />
+								<CardsList fillColorIcon={color} />
 							</div>
 						</div>
 						{/* <div className="arrow-down" style={{borderTop: `20vh solid ${color}-color-a`}}> </div> */}

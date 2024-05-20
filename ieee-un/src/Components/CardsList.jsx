@@ -7,7 +7,7 @@ import '../Styles/CardsList.sass';
 import { MemberCard } from './MemberCard.jsx'; 
 import team from './utils/Members.json'; 
 
-export const CardsList = ({fiilColorIcon}) => {
+export const CardsList = ({fillColorIcon}) => {
 	// const [team, setTeam] = useState([]);
 
 	// useEffect(() => {
@@ -34,7 +34,7 @@ export const CardsList = ({fiilColorIcon}) => {
 				}
 			}
 			return (
-				<MemberCard key={i} name = {integrante.name} role = {integrante.role} img = {photo}  linkLinkedin={integrante.linkLinkedin} linkVarios={integrante.linkVarios} delay={((i*400))} fiilColorIcon = {fiilColorIcon}/>
+				<MemberCard key={i} name = {integrante.name} role = {integrante.role} img = {photo}  linkLinkedin={integrante.linkLinkedin} linkVarios={integrante.linkVarios} delay={((i*400))} fillColorIcon = {fillColorIcon}/>
 			)
 		})
 		return members; 
