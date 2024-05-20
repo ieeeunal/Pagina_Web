@@ -70,19 +70,18 @@ export default function LandingPage() {
 	return (
 		<>
 			<Main colorBackground={color} siteNavLinks={siteNavLinks}>
-				<div id="inicio"></div>
-				<Media />
-				<Hero backImage={Owl} chapterName={color} color2={`${color}-color-b}`} secondColor="Active" >
-					<h2 className="title mr-5"> IngEEEnia tu camino UNAL </h2>
-					{/* <Link className="ml-4 ver-mas slide-bottom" to={routes.chapter}>Ver mas</Link> */}
-					{/* <a className="ml-4 ver-mas slide-bottom" href={pdfInfo}>Ver mas</a> */}
-					<a className="ml-4 ver-mas slide-bottom" href={pdfInfo}>Ver mas</a>
+				<div id="inicio">				<Media />
+					<Hero backImage={Owl} chapterName={color} color2={`${color}-color-b}`} secondColor="Active" >
+						<h2 className="title mr-5"> IngEEEnia tu camino UNAL </h2>
+						{/* <Link className="ml-4 ver-mas slide-bottom" to={routes.chapter}>Ver mas</Link> */}
+						{/* <a className="ml-4 ver-mas slide-bottom" href={pdfInfo}>Ver mas</a> */}
+						<a className="ml-4 ver-mas slide-bottom" href={pdfInfo}>Ver mas</a>
 
-				</Hero>
-				{/* <Modal/> */}
+					</Hero>
+					{/* <Modal/> */}
 
-				{/* <section className="section-3 mt-5  pt-5 full-width d-flex flex-column justify-content-center"> */}
-				<section className={`section-3 full-width d-flex flex-column justify-content-center ${color}-bg-color`} id="quienes-somos">
+					{/* <section className="section-3 mt-5  pt-5 full-width d-flex flex-column justify-content-center"> */}
+					<section className={`section-3 full-width d-flex flex-column justify-content-center ${color}-bg-color`} id="quienes-somos">
 						<div className='bg-shape' data-aos="fade-down" data-aos-easing="linear" data-aos-delay="100">
 							<div className='bg-shape2'>
 								<div className="bg-shape3">
@@ -106,8 +105,8 @@ export default function LandingPage() {
 
 											<div className="quienes-somos-container_tabla-imagen" data-aos="fade-down-left" data-aos-delay="150">
 												{/* <img src={Equipo} alt="" /> */}
-												<YoutubeEmbed embedId='34jUMAJpxxY'/>
-											</div> 
+												<YoutubeEmbed embedId='34jUMAJpxxY' />
+											</div>
 										</div>
 										<hr />
 
@@ -144,27 +143,27 @@ export default function LandingPage() {
 								</div>
 							</div>
 						</div>
-				</section> 
+					</section>
 
-				{ /* Carousel */}
-				<section className={`section-4 position-relative full transition-short ${color}-bg2-color `}>
-					<Chapter changeColor={changeColor} color={color} />
-				</section>
+					{ /* Carousel */}
+					<section className={`section-4 position-relative full transition-short ${color}-bg2-color `}>
+						<Chapter changeColor={changeColor} color={color} />
+					</section>
 
-				{/* WordCloudThingToLearn */}
-				<section className="position-relative full-width" id="ieeestaCharla" data-aos="">
-					<div className="team-div d-flex flex-column align-items-center mb-5" id="equipo">
-						<img className="team-icon" src={learn} alt="" />
-						<div className="row mt-3 align-items-center">
-							<div className="col"><span className="line-title" /></div>
-							<div className="col team-title">¿Qué temas la gente quiere aprender con nosotros?</div>
-							<div className="col"><span className="line-title" /></div>
+					{/* WordCloudThingToLearn */}
+					<section className="position-relative full-width" id="ieeestaCharla" data-aos="">
+						<div className="team-div d-flex flex-column align-items-center mb-5" id="equipo">
+							<img className="team-icon" src={learn} alt="" />
+							<div className="row mt-3 align-items-center">
+								<div className="col"><span className="line-title" /></div>
+								<div className="col team-title">¿Qué temas la gente quiere aprender con nosotros?</div>
+								<div className="col"><span className="line-title" /></div>
+							</div>
 						</div>
-					</div>
-					<WordCloud />
-				</section>
+						<WordCloud />
+					</section>
 
-				{ /* Team */}
+					{ /* Team */}
 					<section className="position-relative full-width pt-5" style={{ height: 'fit-content' }} data-aos="zoom-in">
 						<div className="team-div d-flex flex-column align-items-center mt-5">
 						</div>
@@ -182,7 +181,7 @@ export default function LandingPage() {
 						</div>
 						{/* <div className="arrow-down" style={{borderTop: `20vh solid ${color}-color-a`}}> </div> */}
 					</section>
-
+				</div>
 			</Main>
 		</>
 	)
