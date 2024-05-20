@@ -69,6 +69,7 @@ export default function LandingPage () {
 	
 	return (
 		<>
+			<Main colorBackground={color} siteNavLinks={siteNavLinks}>
 			<div id="inicio"></div>
 			<NavBar />
 			<Media />
@@ -184,13 +185,7 @@ export default function LandingPage () {
 				
 				<Calendar></Calendar>
 			</section>
-
-			{/* Form */}
-			<section className = "position-relative" data-aos="fade-down" id="comentarios">
-				<Form /> 
-			</section> 
-
-			<Footer />
+			</Main>			
 		</>
 	)
 }
