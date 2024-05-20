@@ -82,56 +82,69 @@ export default function LandingPage() {
 				{/* <Modal/> */}
 
 				{/* <section className="section-3 mt-5  pt-5 full-width d-flex flex-column justify-content-center"> */}
-				<section className="section-3 full-width d-flex flex-column justify-content-center" id="quienes-somos" data-aos="fade-down" data-aos-delay="500">
-					<div className="quienes-somos-container center">
-						<br />
-						<br />
-						<br />
-						<h1 className="title-container align-text-center"> ¿Quienes Somos? </h1>
+				<section className={`section-3 full-width d-flex flex-column justify-content-center ${color}-bg-color`} id="quienes-somos">
+						<div className='bg-shape' data-aos="fade-down" data-aos-easing="linear" data-aos-delay="100">
+							<div className='bg-shape2'>
+								<div className="bg-shape3">
+									<div className="quienes-somos-container center" >
+										<div className="team-div title-container d-flex flex-column align-items-center mt-5" data-aos="flip-up" data-aos-delay="50">
+											<div className="row mt-3 align-items-center">
+												<div className="col"><span className={`line-title ${color}-bg2-color`} /></div>
+												<div className="col team-title">¿Who are ?</div>
+												<div className="col"><span className={`line-title ${color}-bg2-color`} /></div>
+											</div>
+										</div>
 
-						<p className="">
-							La Rama Estudiantil IEEE de la Universidad Nacional de Colombia es un grupo estudiantil, asociado a
-							el Institute of Electrical and Electronics Engineers (IEEE), perteneciente a la región 9 comprendida
-							por Latinoamérica y el Caribe, e igualmente a Sección Colombia
-						</p>
+										<div className='quienes-somos-container_tabla'>
+											<div className="quienes-somos-container_tabla-texto" data-aos="fade-down-right" data-aos-delay="150">
+												<p className="">
+													La Rama Estudiantil IEEE de la Universidad Nacional de Colombia es un grupo estudiantil, asociado al Institute of Electrical and Electronics Engineers (IEEE), perteneciente a la región 9 comprendida
+													por Latinoamérica y el Caribe, e igualmente a Sección Colombia. <br />
+													<br />La Rama esta enfocada en el desarrollo intelectual, moral y personal de sus miembros, brindando espacios de discusión, difusión y crecimiento en diversas áreas del conocimiento.
+												</p>
+											</div>
 
-						<br />
-						<br />
+											<div className="quienes-somos-container_tabla-imagen" data-aos="fade-down-left" data-aos-delay="150">
+												{/* <img src={Equipo} alt="" /> */}
+												<YoutubeEmbed embedId='34jUMAJpxxY'/>
+											</div> 
+										</div>
+										<hr />
 
-						<div className=""> </div>
-						<hr />
+										<div className="data-container row d-flex  justify-content-center align-items-center">
+											<div className="col d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+												<p className="a">
+													+260
+												</p>
+												<p className="b">
+													Miembros
+												</p>
+											</div>
 
-						<div className="data-container row d-flex  justify-content-center align-items-center">
-							<div className="col d-flex justify-content-center" data-aos="fade-up" data-aos-delay="300">
-								<p className="a">
-									+260
-								</p>
-								<p className="b">
-									Miembros
-								</p>
-							</div>
-
-							<div className="col d-flex justify-content-center" data-aos="fade-up" data-aos-delay="500">
-								<p className="a">
-									12
-								</p>
-								<p className="b">
-									Capítulos
-								</p>
-							</div>
+											<div className="col d-flex justify-content-center" data-aos="fade-up" data-aos-delay="150">
+												<p className="a">
+													09
+												</p>
+												<p className="b">
+													Capítulos
+												</p>
+											</div>
 
 
-							<div className="col d-flex justify-content-center" data-aos="fade-up" data-aos-delay="700">
-								<p className="a">
-									32
-								</p>
-								<p className="b">
-									Proyectos
-								</p>
+											<div className="col d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
+												<p className="a">
+													32
+												</p>
+												<p className="b">
+													Proyectos
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
-					</div>
-				</section>
+					</section> 
 
 				{ /* Carousel */}
 				<section className={`position-relative full mt-5 transition-short ${color}-bg-color `} id="capitulos">
