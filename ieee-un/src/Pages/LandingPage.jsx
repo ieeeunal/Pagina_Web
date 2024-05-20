@@ -151,25 +151,6 @@ export default function LandingPage() {
 					<Chapter changeColor={changeColor} color={color} />
 				</section>
 
-				{ /* Team */}
-				<section className="position-relative full-width pt-5" style={{ height: 'fit-content' }}>
-					<div className="team-div d-flex flex-column align-items-center mt-5" id="equipo">
-						<img className="team-icon" src={team} alt="" />
-						<div className="row mt-3 align-items-center">
-							<div className="col"><span className="line-title" /></div>
-							<div className="col team-title">Nuestro Equipo</div>
-							<div className="col"><span className="line-title" /></div>
-						</div>
-					</div>
-					<div className="w-100 position-relative" style={{ height: 'fit-content' }}>
-						<div className="arrow-up"> </div>
-						<div className="card-container-team position-relative">
-							<CardsList />
-						</div>
-					</div>
-					<div className="arrow-down"> </div>
-				</section>
-
 				{/* WordCloudThingToLearn */}
 				<section className="position-relative full-width" id="ieeestaCharla" data-aos="">
 					<div className="team-div d-flex flex-column align-items-center mb-5" id="equipo">
@@ -182,6 +163,25 @@ export default function LandingPage() {
 					</div>
 					<WordCloud />
 				</section>
+
+				{ /* Team */}
+					<section className="position-relative full-width pt-5" style={{ height: 'fit-content' }} data-aos="zoom-in">
+						<div className="team-div d-flex flex-column align-items-center mt-5">
+						</div>
+						<div className="w-100 position-relative" style={{ height: 'fit-content' }}>
+							<div className={`card-container-team position-relative`}>
+								<div className="team-div d-flex flex-column align-items-center mt-5">
+									<div className="row mt-3 align-items-center">
+										<div className="col"><span className={`line-title ${color}-bg2-color`} /></div>
+										<div className="col team-title" id="equipo">Officers</div>
+										<div className="col"><span className={`line-title ${color}-bg2-color`} /></div>
+									</div>
+								</div>
+								<CardsList fiilColorIcon={color} />
+							</div>
+						</div>
+						{/* <div className="arrow-down" style={{borderTop: `20vh solid ${color}-color-a`}}> </div> */}
+					</section>
 
 			</Main>
 		</>
