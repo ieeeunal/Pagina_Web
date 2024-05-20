@@ -1,36 +1,42 @@
 /*
-Landing Page v1.0 (20-07-2022)
+Landing Page v3.0 (19-05-2024)
 Página principal de la aplicación.
 Contiene toda la información de la rama.
 */
 
-import { React, useEffect, useState} from 'react';
+import { React, useEffect, useState } from 'react';
 import AOS from 'aos';
 import "aos/dist/aos.css";
 
-import NavBar from "../Components/Navbar";
-import Media from "../Components/Media";
+// Pdf
+import pdfInfo from "../Assets/InfoDoc_IEEEUNAL.pdf"
 
+// Images
 import Owl from '../Assets/Buho.svg';
-// import pdfInfo from '../Components/utils/IEEEUN.pdf';
+import learn from '../Assets/learn.png'
+import events from '../Assets/events.png';
+import team from '../Assets/team.png';
+// import Equipo from '../Assets/Equipo.png';
 
+// Routes
+import routes from '../Helpers/routes';
+
+// Styles
 import '../Styles/LandingPage.sass';
+
+// Componets
 import { Chapter } from '../Components/Chapter';
 import { CardsList } from '../Components/CardsList';
-// import { firebase } from '../Firebase/ConfigFirebase';
-
-import team from '../Assets/team.png';
-import events from '../Assets/events.png';
-import learn from '../Assets/learn.png'
-
+import Media from "../Components/Media";
+import Main from '../Components/main';
 import Hero from '../Components/Hero';
-import Calendar from '../Components/Calendar';
-import Modal from '../Components/Modal';
-import Form from '../Components/Form';
-import routes from '../Helpers/routes';
-import Footer from '../Components/Footer';
-import { Link } from 'react-router-dom';
+import YoutubeEmbed from '../Components/YoutubeEmbed'
 import WordCloud from '../Components/WordCloud';
+import ColorSelecter from '../Components/ColorSelecter';
+// import Modal from '../Components/Modal';
+// import { GetDataDB } from '../Components/utils/callDB';
+// import { SelectColor } from '../Components/utils/selectColor';
+// import { firebase } from '../Firebase/ConfigFirebase';
 
 // const db = firebase.database(); 
 // const refMembers = db.ref(`members`); 
