@@ -183,18 +183,6 @@ export default function LandingPage() {
 					<WordCloud />
 				</section>
 
-
-				{ /* Events */}
-				<section className="position-relative full-width" id="eventos" data-aos="zoom-in">
-					<div className="team-div d-flex flex-column align-items-center">
-						<img className="team-icon" src={events} alt="" />
-						<div className="row mt-3 align-items-center mt-5">
-							<div className="col"><span className="line-title" /></div>
-							<div className="col team-title">Eventos</div>
-							<div className="col"><span className="line-title" /></div>
-						</div>
-					</div>
-				</section>
 			</Main>
 		</>
 	)
