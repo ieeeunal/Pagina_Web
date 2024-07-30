@@ -1,5 +1,4 @@
-import React from "react";
-
+import React, { useEffect, useState } from "react";
 import Main from "../Components/main";
 import HeroZC from "../Components/ZonaCentro/Sections/HeroZC";
 import Info from "../Components/ZonaCentro/Sections/Info";
@@ -9,6 +8,7 @@ import Opinions from "../Components/ZonaCentro/Sections/Opinions";
 import RegistrationForm from "../Components/ZonaCentro/Sections/RegistrationForm";
 import Gallery from "../Components/ZonaCentro/Sections/Gallery";
 import NextEvents from "../Components/ZonaCentro/Sections/NextEvents";
+import Axios from "axios";
 
 const PROXIMO_EVENTO = [
   {
@@ -21,6 +21,14 @@ const PROXIMO_EVENTO = [
 
 export default function ZonaCentro() {
   console.log(PROXIMO_EVENTO)
+
+  const [team, setTeam] = useState([]);
+
+	useEffect(() => {
+		Axios.get("/member/list").then((result) => {
+		  setTeam(result.data);
+		});
+	}, []);
   
   const siteNavLinks = [
     { navLinkName: "Cronograma", scrollToId: "#schedule" },
