@@ -2,8 +2,9 @@
 import './Styles/app.sass'; 
 
 import routes from './Helpers/routes'
-
+// import LandingPage, {loader as LandingPageLoader} from "./Pages/LandingPage";
 import LandingPage from './Pages/LandingPage';
+import Test from './Pages/Test';
 import Chapter from './Pages/Chapters';
 import ChapterDetails from './Pages/ChapterDetails';
 import Login from './Pages/Login';
@@ -15,6 +16,7 @@ import ValidateUser from './Pages/ValidateUser';
 import Admin from './Pages/Admin';
 import AdminSubPages from './Pages/AdminSubPages';
 import AdminUser from './Pages/AdminUser';
+import AdminZonaCentro from './Pages/AdminZonaCentro';
 import AdminMember from './Pages/AdminMember';
 import AdminChapter from './Pages/AdminChapter';
 import AdminMessage from './Pages/AdminMessage';
@@ -38,6 +40,7 @@ export default function App() {
         <Route path={routes.events} element={<Events />} />
         <Route path={routes.zonaCentro} element={<ZonaCentro />} />
         <Route path={routes.unRobot} element={<UNRobot />} />
+        <Route path={routes.test} element={<Test />} />
         <Route
           exact
           strict
@@ -45,12 +48,15 @@ export default function App() {
           path={routes.chapterId}
           element={<ChapterDetails />}
         />
+        
+
         <Route path={routes.admin} element={<Admin />} />
         {/* <Route path={routes.adminId} element={<AdminSubPages />} /> */}
         <Route path={routes.adminUser} element={<AdminUser />} />
         <Route path={routes.adminMember} element={<AdminMember />} />
         <Route path={routes.AdminChapter} element={<AdminChapter />} />
         <Route path={routes.AdminMessage} element={<AdminMessage />} />
+        <Route path={routes.AdminZonaCentro} element={<AdminZonaCentro />} />
 
         
         <Route path={routes.notFound} element={<NotFound404 />} />
