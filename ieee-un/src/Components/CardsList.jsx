@@ -5,17 +5,18 @@ import Axios from "axios";
 import '../Styles/CardsList.sass'; 
 
 import { MemberCard } from './MemberCard.jsx'; 
-import team from './utils/Members.json'; 
+// import team from './utils/Members.json'; 
 
 export const CardsList = ({fillColorIcon}) => {
-	// const [team, setTeam] = useState([]);
+	const [team, setTeam] = useState([]);
 
-	// useEffect(() => {
-	// 	Axios.get("/member/list").then((result) => {
-	// 	  setTeam(result.data);
-	// 	});
-	//  }, []);
-	// console.log(team)
+	useEffect(() => {
+		Axios.get("/member/list").then((result) => {
+		  setTeam(result.data);
+		});
+	}, []);
+	
+	console.log(team)
 	const getCard = () => {
 		// console.log(team); 
 		const members = team.map((integrante, i) => {
