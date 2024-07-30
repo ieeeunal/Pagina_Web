@@ -5,8 +5,9 @@ import { BrowserRouter } from 'react-router-dom';
 import Axios from 'axios'
 
 
-Axios.defaults.baseURL = ""; // Aqui va el enlace de la base de datos montada en nube
-Axios.defaults.baseURL = "http://localhost:4000";
+Axios.defaults.baseURL = "https://backend-ieee-unal.vercel.app/"; // Aqui va el enlace de la base de datos montada en nube
+// Axios.defaults.baseURL = "http://localhost:4000";
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
