@@ -1,6 +1,21 @@
 import React from "react";
 import "../../../Styles/scheduleZC.sass"
-export default  function Schedule() {
+
+
+const dataPlace = [
+  { hour: "07:00", place: "Sábado 23 de septiembre de 2023", icon: "izqSup-Reloj" },
+  { hour: "Edifico 411 - Patios", place: "Universidad Nacional de Colombia", icon: "izqInf-Pointer" },
+
+]
+
+const dataActivities = [
+  { hour: "07:00", activity: "Bienvenida al evento" },
+  { hour: "08:00", activity: "Reunión de presidentes de la rama" },
+  { hour: "12:30", activity: "Almuerzo - Networking" },
+  { hour: "14:00", activity: "Juego de Rol - Glass Onion: ¿Quién mató a EMB?" }
+]
+
+export default function Schedule() {
   return (
     <div id="schedule">
       <h2>Cronograma</h2>
@@ -22,25 +37,15 @@ export default  function Schedule() {
           </div>
         </div>
         <div className="seccDer">
-          <div className="seccDer-Evento">
-            <h3 className="seccDer-t2">07:00</h3>
-            <h3 className="seccDer-c">Bienvenida al evento</h3>
-          </div>
-          <span></span>
-          <div className="seccDer-Evento">
-            <h3 className="seccDer-t2">08:00</h3>
-            <h3 className="seccDer-c">Reunión de presidentes de la rama</h3>
-          </div>
-          <span></span>
-          <div className="seccDer-Evento">
-            <h3 className="seccDer-t2">12:30</h3>
-            <h3 className="seccDer-c">Almuerzo - Networking</h3>
-          </div>
-          <span></span>
-          <div className="seccDer-Evento">
-            <h3 className="seccDer-t2">14:00</h3>
-            <h3 className="seccDer-c">Juego de Rol - Glass Onion: ¿Quién mató a EMB?</h3>
-          </div>
+          {dataActivities.map((evento, index) => (
+            <div className="containerSeccDer-Evento">
+              <div className="seccDer-Evento">
+                <h3 className="seccDer-t2">{evento.hour}</h3>
+                <h3 className="seccDer-c">{evento.activity}</h3>
+              </div>
+              <span className="underline"></span>
+            </div>
+          ))}
         </div>
       </div>
     </div>
