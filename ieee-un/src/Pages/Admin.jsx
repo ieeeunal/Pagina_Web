@@ -59,7 +59,10 @@ const Admin = () => {
                             {/* <h5 className="section-title ff-secondary text-start text-primary fw-normal">Panel de control</h5> */}
                             <h1 className="ff-secondary fw-normal">Bienvenido {sessionStorage.getItem('name')} a IEEE UNAL - Panel de control<i className="fa fa-utensils text-primary me-2"></i></h1>
                             <p className="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id lacus sed risus gravida semper ac in nulla. Maecenas in varius ante. Donec mauris velit.</p>
-                            <p className="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id lacus sed risus gravida semper ac in nulla. Maecenas in varius ante. Donec mauris velit, interdum non porta nec, luctus quis massa. Praesent luctus ipsum eget diam</p>
+                            <p className="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id lacus sed risus gravida semper ac in nulla. Maecenas in varius ante. Donec mauris velit, interdum non porta nec, luctus quis massa. Praesent luctus ipsum eget diam
+                            {sessionStorage.getItem('rolUser')}
+
+                            </p>
                             {/* <div className="row">
                                 <div className="col-sm-12">
                                     <div className="d-flex align-items-center border-start border-5 border-primary px-3">
