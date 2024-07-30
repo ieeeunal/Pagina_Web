@@ -42,6 +42,24 @@ import ColorSelecter from '../Components/ColorSelecter';
 // const refMembers = db.ref(`members`); 
 // const refGeneral = db.ref(`general`); 
 
+// import FirebaseService from "../services/firebase-service";
+
+// export async function loader(){
+//     const plays = await FirebaseService.listCollection("officers");
+// 	console.log(plays);
+//     return { plays };
+// }
+
+// export async function loader({params}){
+//     const id = params.newId;
+//     const data = await FirebaseService.getDocument(id, "officers");
+//     // const raw_name = "officers/"+data.title.replace(/[\:\"\?\/]/gi, '')
+//     // const poster = await FirebaseService.getPoster(raw_name);
+//     // const mediaList = await FirebaseService.getMediaElements(raw_name);
+//     // return {id, data, poster, mediaList};
+// 	return {id, data};
+// }
+
 export default function LandingPage() {
 	const listColors = ["aess", "aps", "ras", "wie", "pes", "emc", "emb", "eds", "computer", "tems", "zc"]
 	const [color, setColor] = useState('aess');
