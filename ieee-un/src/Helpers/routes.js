@@ -10,6 +10,7 @@ const routes= {
     events: "/Pagina_Web/events",
     zonaCentro: "/Pagina_Web/zona-centro",
     unRobot: "/Pagina_Web/unRobot",
+    test: "/Pagina_Web/test",
     notFound: "*",
 
 // Secciones 
@@ -21,12 +22,13 @@ const routes= {
     seccionComentarios: "#comentarios",
 
 // Rutas Admin
-    admin: "/dashport",
-    adminId: "/dashport/:dashportPage",
-    adminUser: "/dashport/user",
-    adminMember: "/dashport/member",
-    AdminChapter: "/dashport/chapter",
-    AdminMessage: "/dashport/message"
+    admin: "/Pagina_Web/dashport",
+    adminId: "/Pagina_Web/dashport/:dashportPage",
+    adminUser: "/Pagina_Web/dashport/user",
+    adminMember: "/Pagina_Web/dashport/member",
+    AdminChapter: "/Pagina_Web/dashport/chapter",
+    AdminMessage: "/Pagina_Web/dashport/message",
+    AdminZonaCentro: "/Pagina_Web/dashport/ZonaCentro"
     // dashportHome: "/DashportHome",
 }
 
