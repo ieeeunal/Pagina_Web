@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { AiFillHome } from 'react-icons/ai';
 import { BsPeopleFill } from 'react-icons/bs';
-import { HiPhotograph } from "react-icons/hi";
+import { HiPhotograph, HiCalendar } from "react-icons/hi";
 import { SiBookstack, SiGooglemessages } from "react-icons/si";
 import { Link, NavLink } from 'react-router-dom';
 import * as FaIcons from 'react-icons/fa'
@@ -23,7 +23,7 @@ const SideNavBar = () => {
 
     const salir=()=>{
         sessionStorage.clear()
-        window.location.href="/"
+        window.location.href= routes.home
     }
 
     return (
@@ -47,7 +47,7 @@ const SideNavBar = () => {
                         </Link>
                     </li>
                     <li className={activeNavTextItem ? `${styles.navText} ${styles.active}` : `${styles.navText}`}>
-                        <Link to={`${routes.admin}`} onClick={activeNavTextItem}><AiFillHome />
+                        <Link to={`${routes.home}`} onClick={activeNavTextItem}><AiFillHome />
                             <span>Home</span>
                         </Link>
                     </li>
@@ -58,7 +58,12 @@ const SideNavBar = () => {
                     </li>
                     <li className={styles.navText}>
                         <Link to={`${routes.admin}/member`} onClick={activeNavTextItem}><HiPhotograph />
-                            <span>Miembros mostrados</span>
+                            <span>Junta Directiva</span>
+                        </Link>
+                    </li>
+                    <li className={styles.navText}>
+                        <Link to={`${routes.admin}/zonaCentro`} onClick={activeNavTextItem}><HiCalendar />
+                            <span>Zona Centro</span>
                         </Link>
                     </li>
                     <li className={styles.navText}>
