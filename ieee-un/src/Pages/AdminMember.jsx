@@ -20,7 +20,7 @@ const AdminMember = () => {
     let value = dataDB[0];
     let headers = [];
     for (let j in value) {
-      if (!(j in headers)) {
+      if (!(j in headers) && (headers.length < 3)) {
         headers.push(j)
       }
     }
@@ -96,7 +96,6 @@ const AdminMember = () => {
     handleCloseCreate();
   }
 
-
   const modifyMember = (item) => {
     Swal.fire({
       title: "¿Esta seguro que desea modificar esta miembro del equipo?",
@@ -121,9 +120,9 @@ const AdminMember = () => {
     });
   };
 
-  const deleteUser = (id) => {
+  const deleteMember = (id) => {
     Swal.fire({
-      title: "Esta seguro que desea eliminar esta usuario del sistema?",
+      title: "Esta seguro que desea eliminar esta persona de la junta?",
       icon: "warning",
       showCancelButton: true,
       confirmButtonColor: "#3085d6",
@@ -204,59 +203,56 @@ const AdminMember = () => {
   return (
     <>
       <SideNavBar />
+      <div className="container">
+        <h1>Junta Directiva</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi efficitur placerat felis nec gravida. Praesent ligula felis, pellentesque feugiat odio et, imperdiet iaculis risus. Proin luctus massa libero, sit amet ultricies quam rutrum vitae. Cras placerat nunc sit amet molestie ultrices. Fusce non justo a tortor euismod semper. Nam viverra nec ligula sed euismod. Mauris in ante quis odio blandit viverra. Mauris ultrices risus eget mollis fermentum. Donec a mauris lacinia erat condimentum ultrices auctor accumsan felis.</p>
 
-      <h1>Miembros</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi efficitur placerat felis nec gravida. Praesent ligula felis, pellentesque feugiat odio et, imperdiet iaculis risus. Proin luctus massa libero, sit amet ultricies quam rutrum vitae. Cras placerat nunc sit amet molestie ultrices. Fusce non justo a tortor euismod semper. Nam viverra nec ligula sed euismod. Mauris in ante quis odio blandit viverra. Mauris ultrices risus eget mollis fermentum. Donec a mauris lacinia erat condimentum ultrices auctor accumsan felis.</p>
-
-      <div>
-        <h3>Crear un nuevo usuario</h3>
-        <button
-          className="btn btn-primary"
-          onClick={(e) => alertCreateMember()}
-        >Crear</button>
-      </div>
-
-      <table className="table table-responsive-md">
-        <thead className="table-primary">
-          <tr>
-            {/* <th># REGISTRO</th> */}
-            {headerTable.map((item) => <th key={item.toUpperCase()}>{item.toUpperCase()}</th>)}
-            {/* <td>id</td>
-            <th>NOMBRE</th>
-            <th>ROL</th>
-            <th>LINK LINKEDIN</th>
-            <th>LINK VARIOS</th> */}
-          </tr>
-        </thead>
-        <tbody>
-          {dataDB.map((item, index) => (
+        <table className="table table-responsive-md">
+          <thead className="table-primary">
             <tr>
-              <td>{index + 1}</td>
-              {/* <td>{item._id}</td> */}
-              <td>{item.name}</td>
-              <td>{item.role}</td>
-              <td>{item.id}</td>
-              <td>{item.linkLinkedin}</td>
-              <td>{item.linkVarios}</td>
-
-              <td>
-                <button className="btn btn-warning" onClick={(e) => modifyMember(item)}>Modificar</button>
-              </td>
-              <td>
-                <button
-                  type="button"
-                  className="btn btn-danger"
-                  onClick={(e) => deleteUser(item._id)}
-                >
-                  Eliminar
-                </button>
-              </td>
+              {/* <th># REGISTRO</th> */}
+              {headerTable.map((item) => <th key={item.toUpperCase()}>{item.toUpperCase()}</th>)}
+              <th>EDITAR</th>
+              <th>ELIMINAR</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {dataDB.map((item, index) => (
+              <tr>
+                <td>{index + 1}</td>
+                {/* <td>{item._id}</td> */}
+                <td>{item.name}</td>
+                <td>{item.role}</td>
+                {/* <td>{item.id}</td> */}
+                {/* <td>{item.linkLinkedin}</td> */}
+                {/* <td>{item.linkVarios}</td> */}
 
+                <td>
+                  <button className="btn btn-warning" onClick={(e) => modifyMember(item)}>Modificar</button>
+                </td>
+                <td>
+                  <button
+                    type="button"
+                    className="btn btn-danger"
+                    onClick={(e) => deleteMember(item._id)}
+                  >
+                    Eliminar
+                  </button>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
 
+        <div>
+          <h3>Anexa un nuevo integrante de la Junta</h3>
+          <button
+            className="btn btn-primary"
+            onClick={(e) => alertCreateMember()}
+          >Crear</button>
+        </div>
+
+      </div>
       <>
         <Modal
           show={modifyshow}

@@ -21,7 +21,7 @@ const AdminChapter = () => {
     let value = dataDB[0];
     let headers = [];
     for(let j in value){
-      if (!(j in headers)){
+      if (!(j in headers) && (headers.length < 3)){
         headers.push(j)
       }
     }
@@ -206,7 +206,7 @@ const modifyChapter = (item) => {
   return (
     <>
       <SideNavBar />
-
+      <div className="container">
       <h1>Capitulos</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi efficitur placerat felis nec gravida. Praesent ligula felis, pellentesque feugiat odio et, imperdiet iaculis risus. Proin luctus massa libero, sit amet ultricies quam rutrum vitae. Cras placerat nunc sit amet molestie ultrices. Fusce non justo a tortor euismod semper. Nam viverra nec ligula sed euismod. Mauris in ante quis odio blandit viverra. Mauris ultrices risus eget mollis fermentum. Donec a mauris lacinia erat condimentum ultrices auctor accumsan felis.</p>
 
@@ -222,13 +222,9 @@ const modifyChapter = (item) => {
       <table className="table table-responsive-md">
         <thead className="table-primary">
           <tr>
-          {/* <th># REGISTRO</th> */}
-              {headerTable.map((item) => <th key={item.toUpperCase()}>{item.toUpperCase()}</th>)}
-            {/* <td>id</td>
-            <th>NOMBRE</th>
-            <th>ROL</th>
-            <th>LINK LINKEDIN</th>
-            <th>LINK VARIOS</th> */}
+            {headerTable.map((item) => <th key={item.toUpperCase()}>{item.toUpperCase()}</th>)}
+            <th>EDITAR</th>
+            <th>ELIMINAR</th>
           </tr>
         </thead>
         <tbody>
@@ -238,10 +234,10 @@ const modifyChapter = (item) => {
               {/* <td>{item._id}</td> */}
               <td>{item.name}</td>
               <td>{item.nameLong}</td>				
-              <td>{item.info}</td>
-              <td>{item.colorId}</td>
-              <td>{item.facebook}</td>
-              <td>{item.instagram}</td>
+              {/* <td>{item.info}</td> */}
+              {/* <td>{item.colorId}</td> */}
+              {/* <td>{item.facebook}</td> */}
+              {/* <td>{item.instagram}</td> */}
 
               <td>
                 <button className="btn btn-warning" onClick={(e) => modifyChapter(item)}>Modificar</button>
@@ -260,9 +256,10 @@ const modifyChapter = (item) => {
         </tbody>
       </table>
 
-
+      </div>
       <>
         <Modal
+          size="lg"
           show={modifyShow}
           onHide={handleCloseModify}
           backdrop="static"
@@ -314,6 +311,9 @@ const modifyChapter = (item) => {
                 {/* <!-- info --> */}
                 <div className="col-md-12">
                   <div className="form-floating">
+                    {/* <textarea name="Text1" cols="40" rows="5" class="form-control" onChange={actualizarestado}>
+                    {chapterEdit.info}
+                    </textarea> */}
                     <input
                       value={chapterEdit.info}
                       type="text"
@@ -402,6 +402,7 @@ const modifyChapter = (item) => {
 
       <>
         <Modal
+          size="lg"
           show={createShow}
           onHide={handleCloseCreate}
           backdrop="static"
