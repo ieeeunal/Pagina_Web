@@ -1,23 +1,7 @@
 {
   "files": {
-    "main.css": "/Pagina_Web/static/css/main.73352b2b.css",
-    "main.js": "/Pagina_Web/static/js/main.a54a40d3.js",
-    "static/js/853.9cc7cd08.chunk.js": "/Pagina_Web/static/js/853.9cc7cd08.chunk.js",
-    "static/js/658.d16ee3e0.chunk.js": "/Pagina_Web/static/js/658.d16ee3e0.chunk.js",
-    "static/js/563.6e2dfe9d.chunk.js": "/Pagina_Web/static/js/563.6e2dfe9d.chunk.js",
-    "static/js/475.af9ee13e.chunk.js": "/Pagina_Web/static/js/475.af9ee13e.chunk.js",
-    "static/js/134.0f9b15ec.chunk.js": "/Pagina_Web/static/js/134.0f9b15ec.chunk.js",
-    "static/js/585.963d7bad.chunk.js": "/Pagina_Web/static/js/585.963d7bad.chunk.js",
-    "static/js/545.46c77406.chunk.js": "/Pagina_Web/static/js/545.46c77406.chunk.js",
-    "static/js/885.c9f4ab31.chunk.js": "/Pagina_Web/static/js/885.c9f4ab31.chunk.js",
-    "static/js/525.9a5c29a0.chunk.js": "/Pagina_Web/static/js/525.9a5c29a0.chunk.js",
-    "static/js/796.4d5377e4.chunk.js": "/Pagina_Web/static/js/796.4d5377e4.chunk.js",
-    "static/js/225.b7632c3b.chunk.js": "/Pagina_Web/static/js/225.b7632c3b.chunk.js",
-    "static/js/773.53bdf48c.chunk.js": "/Pagina_Web/static/js/773.53bdf48c.chunk.js",
-    "static/js/636.2189f93f.chunk.js": "/Pagina_Web/static/js/636.2189f93f.chunk.js",
-    "static/js/640.3ff28848.chunk.js": "/Pagina_Web/static/js/640.3ff28848.chunk.js",
-    "static/js/592.31205ac2.chunk.js": "/Pagina_Web/static/js/592.31205ac2.chunk.js",
-    "static/js/543.0b48ef66.chunk.js": "/Pagina_Web/static/js/543.0b48ef66.chunk.js",
+    "main.css": "/Pagina_Web/static/css/main.43a554d1.css",
+    "main.js": "/Pagina_Web/static/js/main.47d5d1a5.js",
     "static/js/717.4d097768.chunk.js": "/Pagina_Web/static/js/717.4d097768.chunk.js",
     "static/js/354.84bb3463.chunk.js": "/Pagina_Web/static/js/354.84bb3463.chunk.js",
     "static/js/62.4ca770ef.chunk.js": "/Pagina_Web/static/js/62.4ca770ef.chunk.js",
@@ -33,10 +17,8 @@
     "static/media/Buho.svg": "/Pagina_Web/static/media/Buho.1361de620e40e35e835686b29a050df5.svg",
     "static/media/COMPUTER2.png": "/Pagina_Web/static/media/COMPUTER2.906d8a639b146354ca8f.png",
     "static/media/COMPUTER.png": "/Pagina_Web/static/media/COMPUTER.0f9e060c0c2ee7995207.png",
-    "static/media/Equipo.png": "/Pagina_Web/static/media/Equipo.28d7dd075d11c7a0361a.png",
     "static/media/AESS2.png": "/Pagina_Web/static/media/AESS2.b62dc8138f1aa1836330.png",
     "static/media/intro.png": "/Pagina_Web/static/media/intro.d42da819535d60dfc53c.png",
-    "static/media/popUpImage2.png": "/Pagina_Web/static/media/popUpImage2.02fc9e42919bab4bdb57.png",
     "static/media/AESS.png": "/Pagina_Web/static/media/AESS.82082b23a9fc508fa590.png",
     "static/media/andes.jfif": "/Pagina_Web/static/media/andes.4b05004b4188739bf855.jfif",
     "static/media/RAS1.png": "/Pagina_Web/static/media/RAS1.37afc573918bec5a2801.png",
@@ -84,11 +66,11 @@
     "static/media/instagram.svg": "/Pagina_Web/static/media/instagram.23c95988c7e6f9809ba405e2f522d791.svg",
     "static/media/Youtube.svg": "/Pagina_Web/static/media/Youtube.0878849f07cdb0bfafcde98851ba1f8d.svg",
     "static/media/facebook.svg": "/Pagina_Web/static/media/facebook.ebe96069a6bdebde405fbfd86379ca3d.svg",
-    "main.73352b2b.css.map": "/Pagina_Web/static/css/main.73352b2b.css.map",
-    "main.a54a40d3.js.map": "/Pagina_Web/static/js/main.a54a40d3.js.map"
+    "main.43a554d1.css.map": "/Pagina_Web/static/css/main.43a554d1.css.map",
+    "main.47d5d1a5.js.map": "/Pagina_Web/static/js/main.47d5d1a5.js.map"
   },
   "entrypoints": [
-    "static/css/main.73352b2b.css",
-    "static/js/main.a54a40d3.js"
+    "static/css/main.43a554d1.css",
+    "static/js/main.47d5d1a5.js"
   ]
 }
