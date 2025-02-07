@@ -32,15 +32,15 @@ import Main from '../Components/main';
 import Hero from '../Components/Hero';
 import YoutubeEmbed from '../Components/YoutubeEmbed'
 import WordCloud from '../Components/WordCloud';
-import ColorSelecter from '../Components/ColorSelecter';
+// import ColorSelecter from '../Components/ColorSelecter';
 // import Modal from '../Components/Modal';
 // import { GetDataDB } from '../Components/utils/callDB';
 // import { SelectColor } from '../Components/utils/selectColor';
 // import { firebase } from '../Firebase/ConfigFirebase';
 
-// const db = firebase.database(); 
-// const refMembers = db.ref(`members`); 
-// const refGeneral = db.ref(`general`); 
+// const db = firebase.database();
+// const refMembers = db.ref(`members`);
+// const refGeneral = db.ref(`general`);
 
 // import FirebaseService from "../services/firebase-service";
 
