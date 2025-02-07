@@ -12,9 +12,9 @@ import Axios from "axios";
 
 const PROXIMO_EVENTO = [
   {
-    day: '17', 
-    month: '11', 
-    year: '2024', 
+    day: '27', 
+    month: '09', 
+    year: '2025', 
     hour: "8:00:00" 
   }
 ]
