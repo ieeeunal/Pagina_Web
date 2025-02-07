@@ -24,15 +24,15 @@ export default function Schedule() {
           <div className="izqSup">
             <span className="izqSup-Reloj"></span>
             <div className="izqSup-textos">
-              <h3>Sábado 23 de septiembre de 2023</h3>
-              <h3>07:00 am</h3>
+              <h3>Sábado 27 de septiembre de 2025</h3>
+              <h3>08:00 am</h3>
             </div>
           </div>
           <div className="izqInf">
             <span className="izqInf-Pointer"></span>
             <div className="izqInf-textos">
               <h3>Universidad Nacional de Colombia</h3>
-              <h3>Edifico 411 - Patios</h3>
+              <h3>Edifico 500 - Agronomia</h3>
             </div>
           </div>
         </div>
