@@ -1,6 +1,6 @@
 import { React, useEffect, useState } from 'react'
 import { useNavigate, Link } from 'react-router-dom';
-import { UserAuth } from '../Context/AuthContext';
+// import { UserAuth } from '../Context/AuthContext';
 import Axios from "axios";
 import Swal from 'sweetalert2'
 
@@ -12,7 +12,7 @@ import routes from '../Helpers/routes';
 import { validateEmail } from '../Components/utils/Validation';
 
 // import data from '../Components/utils/Chapters.json'
-import initial from "../Assets/chapters/AESS2.png"
+import initial from "../Assets/chapters/AESS.png"
 import InlineError from '../Components/InlineError';
 
 const Login = () => {
@@ -40,7 +40,7 @@ const Login = () => {
         Axios.get("/chapter/list").then((result) => {
             setItemsDataB(result.data);
         });
-        
+
         // getActiveChaptersList()
         // updateImage()
     }, [])
@@ -81,7 +81,7 @@ const Login = () => {
         import(`../Assets/chapters/${imageSelect}.png`).then(image => {
             setImage(image.default);
         }).catch((e) => {
-            // alert('Failed'); 
+            // alert('Failed');
             console.log('Failed');
         })
     }
@@ -177,7 +177,7 @@ const Login = () => {
                             Iniciar con Gmail
                         </button>
                     </div>
-                    
+
                 </form>
             </Hero>
         </>
@@ -185,5 +185,3 @@ const Login = () => {
 }
 
 export default Login
-
-
