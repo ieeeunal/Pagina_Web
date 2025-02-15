@@ -86,8 +86,9 @@ export default function Form () {
 	
 	return (
 		<div className = "d-flex flex-column center px-4 px-md-0">
-								
-			<form className = {`container ${styles.registerForm}`} method="POST" action="https://script.google.com/macros/s/AKfycbwvc4Uz2Nn-ixdCdDLLLw1ilF6ePdk_XLJLJF9X0LrFpAmjdV6pWEdKV3wzcLnqma8-DA/exec" id="test">
+
+			{/* AKfycbxgHv3v2BKuZFba_wivCooT4btQMCxpwt0UdBS7rUPYqXw22_HYpV1qjla6trlNqgWWXQ */}
+			<form className = {`container ${styles.registerForm}`} method="POST" action="https://script.google.com/macros/s/AKfycbwCdHvmdW9yrbigISUI8RSLO76D2tba4C7EfAcAqHE_XzwIf95I7z-vY3XqYtQVuwdBAA/exec" id="test">
 			
 				<div className = "row my-2">
 					<input className = "form-control col" type="text" id="fullName" name="fullName" placeholder = "Nombre completo" required onChange={(e) => setFullName(e.target.value)}/>
